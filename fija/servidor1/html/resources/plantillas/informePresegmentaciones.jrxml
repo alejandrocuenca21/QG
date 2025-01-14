@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="tipoDocumento" class="java.lang.String"/>
+	<field name="fechaIniVigencia" class="java.lang.String"/>
+	<field name="fechaFinVigencia" class="java.lang.String"/>
+	<field name="usuarioAlta" class="java.lang.String"/>
+	<field name="usuarioBaja" class="java.lang.String">
+		<fieldDescription><![CDATA[usuarioModif]]></fieldDescription>
+	</field>
+	<field name="segmento" class="java.lang.String"/>
+	<field name="subSegmento" class="java.lang.String"/>
+	<field name="segmentoDes" class="java.lang.String"/>
+	<field name="subSegmentoDes" class="java.lang.String"/>
+	<field name="ofAtencion" class="java.lang.String"/>
+	<field name="tandem" class="java.lang.String"/>
+	<field name="desOrigPresegmentacion" class="java.lang.String"/>
+	<field name="fechaModif" class="java.lang.String"/>
+	<field name="usuarioModif" class="java.lang.String"/>
+	<field name="desMotivoBaja" class="java.lang.String"/>
+	<field name="numDocumento" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="0" width="555" height="35" forecolor="#DADAE5" backcolor="#DADAE5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" forecolor="#13165C"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informe Presegmentaciones]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="1" width="34" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Tipo Doc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="103" y="1" width="27" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Des. Seg.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="302" y="1" width="46" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[F.Ini.Vig.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="462" y="1" width="37" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Us.Mod.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="499" y="1" width="33" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Us.Baja]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="268" y="1" width="35" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Or.Preseg.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="130" y="1" width="44" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Subsegmento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="174" y="1" width="34" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Des. Subseg.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="237" y="1" width="31" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Tándem]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="348" y="1" width="37" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[F.Fin.Vig.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="208" y="1" width="29" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Of. Aten.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="34" y="1" width="35" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Num.Doc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="69" y="1" width="34" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Segmento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="384" y="1" width="31" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Us.Alta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="415" y="1" width="47" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[F.Modificación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="532" y="1" width="23" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="6"/>
+				</textElement>
+				<text><![CDATA[Mot.Baja]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" forecolor="#EFEFF5" backcolor="#EFEFF5">
+					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="34" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[($F{tipoDocumento}.equalsIgnoreCase("C")?"OTROS":($F{tipoDocumento}.equalsIgnoreCase("D")?"DNI/NIF":($F{tipoDocumento}.equalsIgnoreCase("L")?"L.Fiscal":($F{tipoDocumento}.equalsIgnoreCase("N")?"DOCUMENTO NULO":($F{tipoDocumento}.equalsIgnoreCase("P")?"PASAPORTE":($F{tipoDocumento}.equalsIgnoreCase("R")?"T.Residen.":""))))))]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="462" y="0" width="37" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{usuarioModif}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="499" y="0" width="33" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{usuarioBaja}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="268" y="0" width="35" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{desOrigPresegmentacion}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="348" y="0" width="36" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fechaFinVigencia}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="34" y="0" width="35" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{numDocumento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="130" y="0" width="44" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{subSegmento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="174" y="0" width="34" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{subSegmentoDes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="237" y="0" width="31" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tandem}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="103" y="0" width="27" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{segmentoDes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="69" y="0" width="34" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{segmento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="415" y="0" width="47" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fechaModif}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="532" y="0" width="23" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{desMotivoBaja}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="303" y="0" width="45" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{fechaIniVigencia}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="208" y="0" width="29" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{ofAtencion}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="384" y="0" width="31" height="20" forecolor="#00086E"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<topPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineColor="#DDDDDD"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{usuarioAlta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="41" splitType="Stretch">
+			<rectangle radius="3">
+				<reportElement x="0" y="10" width="555" height="20" forecolor="#000099" backcolor="#434690"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="14" width="130" height="20" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ION - Cliente Global]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="369" y="14" width="175" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="14" width="80" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="284" y="14" width="65" height="20" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

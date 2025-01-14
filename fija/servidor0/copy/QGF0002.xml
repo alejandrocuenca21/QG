@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Thu Sep 30 10:46:05 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGGF00CO" Servicio="QGF0002" Descripcion ="ALTA Y REACTIVACION DE CLIENTE PROCEDENTE DE TW" LongDatosTotal ="431" LongDatosEntrada ="431" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-APL-ORI-PET-ALT" Longitud = "4" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-MOV-CLI" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-CLIENTE-GALA" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-ALTA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-ULT-REACTIVAC" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-NOMBRE" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-APELLIDO-1" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-APELLIDO-2" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-RAZON-SOCIAL" Longitud = "140" Tipo = "2" />
+    <NA_GRUPO Nombre = "ANG-DAT-GR" >
+      <NA_CAMPO Nombre = "DS-ANAGR-NOMB" Longitud = "4" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ANAGR-APE1" Longitud = "4" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ANAGR-APE2" Longitud = "4" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ANAGR-RSOC" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ANAGR-ACTV" Longitud = "4" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "DS-ANAGRAMA-GF" Longitud = "9" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-NU-DOC-EXTR" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-ESTADO-CLIENTE" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-MOTIVO-ESTADO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SUBSEGMENTO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-IDENTIDAD" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-ENTIDAD-POBLAC" Longitud = "7" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-OFICINA-AT" Longitud = "5" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

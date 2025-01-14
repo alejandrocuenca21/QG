@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Fri Oct 29 15:36:26 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGRB00CO" Servicio="QGF0104" Descripcion ="BAJA DE DIRECCIONES DE INTERLOCUTORES" LongDatosTotal ="103" LongDatosEntrada ="47" LongDatosSalida ="56" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACS-INF-COX" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-TW" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-INTERLOCUTOR" Longitud = "15" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-SECUEN-DIR" Longitud = "4" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "CO-CLIENTE-TW" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TIP-CLI-LIN-NGC" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-INTERLOCUTOR" Longitud = "15" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-SECUEN-DIR" Longitud = "4" Tipo = "3" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

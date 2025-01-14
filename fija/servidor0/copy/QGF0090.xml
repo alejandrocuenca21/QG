@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Mon May 03 17:51:26 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGO400CO" Servicio="QGF0090" Descripcion ="ENRIQUECIMIENTO DE CLIENTE DE FIJA" LongDatosTotal ="1094" LongDatosEntrada ="1094" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-IDENTIDAD" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-ENTIDAD-POBLAC" Longitud = "5" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-TLF-CONTACTO" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-FAX" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "EMAIL-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "EMA-CLI-DAT-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "IT-ALT-EMA-PPR" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-DIR-CORREO" Longitud = "80" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

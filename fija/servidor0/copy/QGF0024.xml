@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:23:14 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC134CO" Servicio="QGF0024" Descripcion ="DESCRIPCION DE LOS CODIGOS DE DIRECCION" LongDatosTotal ="772" LongDatosEntrada ="72" LongDatosSalida ="700" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-PROVINCIA" Longitud = "2" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-ENTIDAD-POBLAC" Longitud = "5" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-FINCA" Longitud = "5" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-CALLE" Longitud = "5" Tipo = "3" />
+    <NA_CAMPO Nombre = "IN-BIS-DUPLIC" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-ESCALERA" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-PLANTA" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-LETRA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-VIA" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-CODIGO-POSTAL" Longitud = "5" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-TELEFONO" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-FAX" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-BLOQUE" Longitud = "6" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-PORTAL" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "DS-PROVINCIA" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-ENTIDAD-POBLAC" Longitud = "80" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-FINCA" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-ACLARAD-FINCA" Longitud = "30" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-CALLE" Longitud = "80" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-BIS-DUPLIC" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-ESCALERA" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-PLANTA" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-LETRA" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-TIPO-VIA" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-BLOQUE" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-DOMICILIO-GRL" Longitud = "150" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-PORTAL" Longitud = "40" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

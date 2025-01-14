@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Mar 28 12:35:34 MEST 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC400CO" Servicio="QGF0117" Descripcion ="ADMINISTRACION DE LINEAS DE NEGOCIO DEL DERECHO" LongDatosTotal ="9474" LongDatosEntrada ="22" LongDatosSalida ="9452" HashDNA ="e60f5d62ce403bfd17f579fac27a6291" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "LIN-DRH-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CSM-DRH-INTERNO" Longitud = "100" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALTA" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por TER: Fri Mar 06 12:26:27 CET 2015 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGC115CO" Servicio = "QGF0023" Descripcion = "DIRECCIONES DE UN CLIENTE" LongDatosTotal = "8272" LongDatosEntrada = "8" LongDatosSalida = "8264" HashDNA = "8e77484a9fc3c8bc178e4c4134af45e8" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "DIR-LOG-OCU-NU" Longitud = "2" MinOccurs = "0" Tipo = "3" />
+    <NA_GRUPO Nombre = "DIR-LOG-GR" Occurs = "25" MinOccurs = "0" MaxOccurs = "25" >
+      <NA_CAMPO Nombre = "IN-ORI-DIR-LOG" Longitud = "1" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DIRECCION" Longitud = "2" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-DIRE" Longitud = "50" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-DIR-LOG" Longitud = "80" MinOccurs = "0" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "DIR-LNF-OCU-NU" Longitud = "1" MinOccurs = "0" Tipo = "3" />
+    <NA_GRUPO Nombre = "DIR-LNF-GR" Occurs = "5" MinOccurs = "0" MaxOccurs = "5" >
+      <NA_CAMPO Nombre = "IN-ORI-DIR" Longitud = "1" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PROVINCIA" Longitud = "2" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-PROVINCIA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ENTIDAD-POBLAC" Longitud = "80" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-CODIGO-POSTAL" Longitud = "5" MinOccurs = "0" Tipo = "3" />
+      <NA_CAMPO Nombre = "DS-PAIS" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DIRECCION" Longitud = "2" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-DIRE" Longitud = "50" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-VIA" Longitud = "2" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-VIA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CALLE" Longitud = "80" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-FINCA" Longitud = "5" MinOccurs = "0" Tipo = "3" />
+      <NA_CAMPO Nombre = "DS-BIS-DUPLIC" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-BLOQUE" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-PORTAL" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ESCALERA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-PLANTA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-LETRA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ACLARADOR-FINCA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "DIR-OCU-NU" Longitud = "1" MinOccurs = "0" Tipo = "3" />
+    <NA_GRUPO Nombre = "GEO-DIR-LNM-GR" Occurs = "5" MinOccurs = "0" MaxOccurs = "5" >
+      <NA_CAMPO Nombre = "CO-TIPO-DIRECCION" Longitud = "2" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-DIRE" Longitud = "50" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PROVINCIA-UNM" Longitud = "2" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-PROVINCIA" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ENT-POBLAC-UNM" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-INE-ENT-POB-UNM" Longitud = "12" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-MUNICIPIO-UNM" Longitud = "40" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-POSTAL-UNM" Longitud = "5" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-VIA-UNM" Longitud = "3" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-TIP-VIA-UNM" Longitud = "11" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-CALLE-UNM" Longitud = "70" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALLE-INE-UNM" Longitud = "5" MinOccurs = "0" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOM-ATE-UNM" Longitud = "80" MinOccurs = "0" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

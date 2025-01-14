@@ -1,0 +1,776 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  </head>
+
+<div>
+
+<div style="position: relative;	height: 35px;">
+<h2 style="text-align:center;font-family: times,Helvetica,sans-serif;font-size: 25pt;background-color:#DADAE5;">Informe de conciliaci&oacute;n</h2>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<div id="divInforme">
+
+<div style="position: relative;	height: 35px;">
+<h2 style="text-align:left;font-family: Arial,Helvetica,sans-serif;font-size: 20pt;">$P{fechaSolic}</h2>
+<br></br>
+</div>
+	<div>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td colspan="12" style="text-align:center; background-color:rgb(51,102,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">DEPURACION DE DATOS DE CLIENTES</td>					
+				</tr>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td colspan="4" style="text-align:center; background-color:rgb(255,255,153);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">DEPURACION CON TW</td>
+					<td colspan="4" style="text-align:center; background-color:rgb(255,255,153);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">DEPURACION CON NSCO</td>
+					<td colspan="4" style="text-align:center; background-color:rgb(255,255,153);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">DEPURACION CON PREPAGO</td>					
+					
+				</tr>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">TW</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">NSCO</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">PREPAGO</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>					
+					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de clientes recibidos</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGTW_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGNSCO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DDC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGPREPAGO_DDC,0}</td>									
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de clientes descartados por no cumplir condiciones de carga y haber quedado excluidos de QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGTW_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGNSCO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DDC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGPREPAGO_DDC,1}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de clientes descartados por fecha modif. Posterior a conciliaci&oacute;n</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGTW_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGNSCO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DDC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGPREPAGO_DDC,2}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de clientes descartados por tipo de doc. o nombre / raz&oacute;n social err&oacute;neo</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGTW_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGNSCO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DDC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGPREPAGO_DDC,3}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Clientes de QG que no existen en origen por regularizaciones en sistemas origen</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGTW_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGNSCO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DDC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGPREPAGO_DDC,4}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de clientes para el proceso de conciliaci&oacute;n</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGTW_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQGNSCO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DDC,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DDC,5}</td>					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<br></br>
+	
+	<div>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td colspan="9" style="text-align:center; background-color:rgb(51,102,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">CLIENTES CONCILIADOS</td>
+				</tr>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td colspan="3" style="text-align:center; background-color:rgb(255,255,153);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">CONCILIACION CON TW</td>
+					<td colspan="3" style="text-align:center; background-color:rgb(255,255,153);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">CONCILIACION CON NSCO</td>
+					<td colspan="3" style="text-align:center; background-color:rgb(255,255,153);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">CONCILIACION CON PREPAGO</td>					
+				</tr>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">TW</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">NSCO</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">PREPAGO</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de clientes para el proceso de conciliaci&oacute;n</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DCC,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DCC,0}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Clientes correctos sin discrepancias</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DCC,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DCC,1}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Clientes a dar de alta en QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DCC,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DCC,2}</td>
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Clientes a modificar en QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DCC,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DCC,3}</td>					
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Clientes a dar de baja en QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosTW_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesTW_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGTW_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGNSCO_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosPREPAGO_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesPREPAGO_DCC,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQGPREPAGO_DCC,4}</td>					
+				</tr>				
+			</tbody>
+		</table>
+	</div>
+	
+	<br></br>
+	
+	<div>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+					<td colspan="4" style="text-align:center; background-color:rgb(51,102,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">CONCILIACION DE DIRECCIONES</td>					
+				</tr>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>				
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">NSCO</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">QG</td>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">%</td>				
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">N&uacute;mero de direcciones recibidas</td>					
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,0}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,0}</td>				
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Direcciones no conciliadas por pertenecer a exclientes no cargados en QG</td>					
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,1}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,1}</td>
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Direcciones a conciliar</td>					
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,2}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,2}</td>				
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Direcciones correctas sin discrepancias</td>					
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,3}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,3}</td>				
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Direcciones a dar de alta en QG</td>					
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,4}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,4}</td>				
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Direcciones a modificar en QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,5}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,5}</td>									
+				</tr>
+				<tr>
+					<td style="text-align:left; background-color:rgb(204,255,204);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;">Direcciones a dar de baja en QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosNSCO_DCD,6}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesNSCO_DCD,6}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaDatosQG_DCD,6}</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{listaPorcentajesQG_DCD,6}</td>					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<br></br>
+</div>
+
+<h1 style="page-break-after: always;"></h1>
+
+
+<div id="divNSCO">
+
+<div style="position: relative;	height: 35px;">
+<h2 style="text-align:left;font-family: Arial,Helvetica,sans-serif;font-size: 20pt;">NSCO</h2>
+</div>
+<br></br>
+<br></br>
+
+	<div>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL CLIENTES NSCO EN SISTEM ORIGEN</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,0}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - EXCLIENTES NO TRATADOS POR NO EXISTIR EN QG :</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,1}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES DE NSCO ORIGEN NO TRAT. POR EL TMS.:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,2}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR TIPO Y/O N. DOCUM.  ERRONEO:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,3}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR NOM/APELL/RAZ. SOC. ERRONEO:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,4}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL CLIENTES NSCO EN TABLAS QG..................:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,5}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES ERR. EN QG POR NO EXISTIR EN ORIGEN..:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,6}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES DE CLGL NO TRAT. POR VALOR DEL TMS...:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,7}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">CLIENTES NSCO EN SISTEMA ORIGEN CONCILIADOS.......:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,8}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">CLIENTES NSCO EN QG CONCILIADOS...................:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,9}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES NSCO OK  EN TABLAS QG..............:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,10}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE ALTA DE CLIENTES NSCO EN QG..:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,11}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE MOD. DE CLIENTES NSCO EN QG..:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,12}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL DIRECCIONES NSCO EN SIST. ORIGEN</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,13}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL DIRECCIONES NSCO EN TABLAS QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,14}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL DIRECC. OK EN TABLAS DE QG.</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,15}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >modificar</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,16}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >alta</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,17}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >baja</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,18}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >de exclientes</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{NSCO,19}</td>
+				</tr>									
+			</tbody>
+		</table>
+	</div>
+	
+	<br></br>						
+</div>
+
+<div id="divPREPAGO">
+
+<div style="position: relative;	height: 35px;">
+<h2 style="text-align:left;font-family: Arial,Helvetica,sans-serif;font-size: 20pt;">PREPAGO</h2>
+</div>
+<br></br>
+<br></br>
+
+	<div>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL CLIENTES PREPAGO EN SISTEM ORIGEN</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,0}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES DE NSCO ORIGEN NO TRAT. POR EL TMS.:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,1}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR TIPO Y/O N. DOCUM.  ERRONEO:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,2}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL CLIENTES PREPAGO EN TABLAS QG</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,3}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES ERR. EN QG POR NO EXISTIR EN ORIGEN:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,4}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES DE CLGL NO TRAT. POR VALOR DEL TMS.:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,5}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">CLIENTES PREPAGO EN SISTEMA ORIGEN CONCILIADOS</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,6}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">CLIENTES PREPAGO EN QG CONCILIADOS</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,7}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES PREPAGO OK EN TABLAS QG:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,8}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOV. DE ALTA DE CLIENTES PREPAGO EN QG:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,9}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOV. DE MOD. DE CLIENTES PREPAGO EN QG:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,10}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. PASO EXCLIENTES DE PREPAGO EN QG:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{PREPAGO,11}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<br></br>						
+</div>
+
+<h1 style="page-break-after: always;"></h1>
+
+<div id="divTW">
+
+<div style="position: relative;	height: 35px;">
+<h2 style="text-align:left;font-family: Arial,Helvetica,sans-serif;font-size: 20pt;">TW</h2>
+</div>
+<br></br>
+<br></br>
+
+	<div>
+		<table border="1">
+			<tbody>
+				<tr>
+					<td style="background: none !important;border: 1px solid transparent !important;"></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL CLIENTES TW EN SISTEMA ORIGEN..............</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,0}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >   - EXCLIENTES NO TRATADOS POR NO EXISTIR EN QG :</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,1}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >   - CLIENTES DE TW ORIGEN NO TRAT. POR EL TMS.:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,2}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >   - CLI. RECHAZ. POR TIPO Y/O N. DOCUM.  ERRONEO:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,3}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >   - CLI. RECHAZ. POR NOM/APELL/RAZ. SOC. ERRONEO:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,4}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">TOTAL CLIENTES TW EN TABLAS QG....................:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,5}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES ERR. EN QG POR NO EXISTIR EN ORIGEN..:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,6}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES DE CLGL NO TRAT. POR VALOR DEL TMS...:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,7}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">CLIENTES TW EN SISTEMA ORIGEN CONCILIADOS.......:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,8}</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 30px !important;">CLIENTES TW EN QG CONCILIADOS...................:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,9}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES TW OK  EN TABLAS QG..............:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,10}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE MOD. DE CLIENTES TW EN QG..:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,11}</td>
+				</tr>
+				<tr>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE ALTA DE CLIENTES TW EN QG..:</td>
+					<td style="text-align:right; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >$L{TW,12}</td>
+				</tr>												
+			</tbody>
+		</table>
+	</div>
+	
+	<br></br>						
+
+</div>
+
+<h1 style="page-break-after: always;"></h1>
+	
+<div id="divInformativo">
+
+<div style="position: relative;	height: 35px;">
+<h2 style="text-align:left;font-family: Arial,Helvetica,sans-serif;font-size: 20pt;">INFORMATIVO</h2>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+	<table border="1" style="background-position: left top;background-repeat: repeat-x;color: #65679E !important;font-family: Arial,Helvetica,sans-serif;font-size: 8pt;width: 100%">
+		<tr>
+			<th colspan="2" style="padding: 0 15px !important;text-align: center;">CAMPOS PESTA&Ntilde;A NSCO</th>
+		</tr>
+		<tr>
+			<th style="padding: 0 15px !important;text-align: center;">CAMPO</th>
+			<th style="padding: 0 15px !important;text-align: center;">SIGNIFICADO DEL CAMPO</th>
+		</tr>
+		<tbody>
+			<tr>
+				<td style="text-align:left; width:45%; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >TOTAL CLIENTES NSCO EN SISTEM ORIGEN</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de Clientes del Sistema Origen enviados en el fichero de Conciliaci&oacute;n</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - EXCLIENTES NO TRATADOS POR NO EXISTIR EN QG :</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Exclientes de NSCO que no se cargaron en QG </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES DE NSCO ORIGEN NO TRAT. POR EL TMS.:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Cliente de NSCO con actulalizaci&oacute;n en QG posterior a la creaci&oacute;n del fichero de Conciliaci&oacute;n de NSCO, estos clientes no se tratan, se conciliar&aacute;n en la siguiente ejecuci&oacute;n de la Conciliaci&oacute;n </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR TIPO Y/O N. DOCUM.  ERRONEO:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Se valida que el n&uacute;mero de documento sea distinto de espacios y ceros, y que el tipo de documento tenga alguno de los siguientes valores: N, C, P &oacute; T. </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR NOM/APELL/RAZ. SOC. ERRONEO:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Las validaciones que se realizan son: <br></br>
+					*  Si el nombre esta informado, el apellido-1 tiene que estar informado, en caso contrario ser&iacute;a err&oacute;neo.<br></br>
+					*  Si el nombre no viene informado, la raz&oacute;n social tiene que venir informada, en caso contrario ser&iacute;a err&oacute;neo.<br></br>
+					*  Si el anagrama de cliente global calculado es igual a espacios ser&iacute;a err&oacute;neo.</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >TOTAL CLIENTES NSCO EN TABLAS QG..................:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de NSCO que estan en QG</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES ERR. EN QG POR NO EXISTIR EN ORIGEN..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que no se concilian porque est&aacute;n en QG y no est&aacute;n en el fichero de NSCO, son los clientes Cancelados</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES DE CLGL NO TRAT. POR VALOR DEL TMS...:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Cliente de QG con actulalizaci&oacute;n en QG posterior a la creacion del fichero de Conciliaci&oacute;n de NSCO, estos clientes no se tratan, se conciliar&aacute;n en la siguiente ejecuci&oacute;n de la Conciliaci&oacute;n </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >CLIENTES NSCO EN SISTEMA ORIGEN CONCILIADOS.......:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de NSCO que se han conciliado (A3-A4-A5-A6-A7)</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >CLIENTES NSCO EN QG CONCILIADOS...................:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de QG que se han conciliado (A10-A11-A12)</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES NSCO OK  EN TABLAS QG..............:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que est&aacute;n igual en QG y en NSCO</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE ALTA DE CLIENTES NSCO EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que deber&iacute;an existir en QG y no existen</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE MOD. DE CLIENTES NSCO EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que tienen informaci&oacute;n desactualizada en QG frente a NSCO</td>
+			</tr>
+		</tbody>
+	</table>
+	
+<h1 style="page-break-after: always;"></h1>
+
+	<table border="1" style="background-position: left top;background-repeat: repeat-x;color: #65679E !important;font-family: Arial,Helvetica,sans-serif;font-size: 8pt;width: 100%">
+		<tr>
+			<th colspan="2" style="padding: 0 15px !important;text-align: center;">CAMPOS PESTA&Ntilde;A PREPAGO</th>
+		</tr>
+		<tr>
+			<th style="padding: 0 15px !important;text-align: center;">CAMPO</th>
+			<th style="padding: 0 15px !important;text-align: center;">SIGNIFICADO DEL CAMPO</th>
+		</tr>
+		<tbody>
+			<tr>
+				<td style="text-align:left; width:45%; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >TOTAL CLIENTES PREPAGO EN SISTEM ORIGEN</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de Clientes del Sistema Origen enviados en el fichero de Conciliaci&oacute;n</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES DE NSCO ORIGEN NO TRAT. POR EL TMS.:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Cliente de NSCO con actulalizaci&oacute;n en QG posterior a la creaci&oacute;n del fichero de Conciliaci&oacute;n de NSCO, estos clientes no se tratan, se conciliar&aacute;n en la siguiente ejecuci&oacute;n de la Conciliaci&oacute;n </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR TIPO Y/O N. DOCUM.  ERRONEO:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Se valida que el n&uacute;mero de documento sea distinto de espacios y ceros,  y que el tipo de documento tenga alguno de los siguientes valores: N, C, P &oacute; T. </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >TOTAL CLIENTES PREPAGO EN TABLAS QG</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de NSCO que estan en QG</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES ERR. EN QG POR NO EXISTIR EN ORIGEN:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que no se concilian porque est&aacute;n en QG y no est&aacute;n en el fichero de NSCO, son los clientes Cancelados</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES DE CLGL NO TRAT. POR VALOR DEL TMS:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Cliente de QG con actulalizaci&oacute;n en QG posterior a la creacion del fichero de Conciliaci&oacute;n de NSCO,estos clientes no se tratan, se conciliar&aacute;n en la siguiente ejecuci&oacute;n de la Conciliaci&oacute;n </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >CLIENTES PREPAGO EN SISTEMA ORIGEN CONCILIADOS</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de NSCO que se han conciliado (A3-A4-A5-A6-A7)</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >CLIENTES PREPAGO EN QG CONCILIADOS</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de QG que se han conciliado (A10-A11-A12)</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES PREPAGO OK  EN TABLAS QG..............:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que est&aacute;n igual en QG y en NSCO</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE ALTA DE CLIENTES PREPAGO EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que deber&iacute;an existir en QG y no existen</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE MOD. DE CLIENTES PREPAGO EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que tienen informaci&oacute;n desactualizada en QG frente a NSCO</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE BAJA DE CLIENTES PREPAGO EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que deber&iacute;an existir en PREPAGO y no existen</td>
+			</tr>			
+		</tbody>
+	</table>	
+	
+<h1 style="page-break-after: always;"></h1>
+
+	<table border="1" style="background-position: left top;background-repeat: repeat-x;color: #65679E !important;font-family: Arial,Helvetica,sans-serif;font-size: 8pt;width: 100%">
+		<tr>
+			<th colspan="2" style="padding: 0 15px !important;text-align: center;">CAMPOS PESTA&Ntilde;A TW</th>
+		</tr>
+		<tr>
+			<th style="padding: 0 15px !important;text-align: center;">CAMPO</th>
+			<th style="padding: 0 15px !important;text-align: center;">SIGNIFICADO DEL CAMPO</th>
+		</tr>
+		<tbody>
+			<tr>
+				<td style="text-align:left; width:45%; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >TOTAL CLIENTES TW EN SISTEM ORIGEN</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de Clientes del Sistema Origen enviados en el fichero de Conciliaci&oacute;n</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - EXCLIENTES NO TRATADOS POR NO EXISTIR EN QG :</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Si el cliente existente en TW tiene un estado distinto de: 1, 2, 3 &oacute; 4 (reactivable (motivo:  15 o  91))</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES DE TW ORIGEN NO TRAT. POR EL TMS.:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Cliente de TW con actulalizaci&oacute;n en QG posterior a la creaci&oacute;n del fichero de Conciliaci&oacute;n de TW, estos clientes no se tratan, se conciliar&aacute;n en la siguiente ejecuci&oacute;n de la Conciliaci&oacute;n </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR TIPO Y/O N. DOCUM.  ERRONEO:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Se valida que el n&uacute;mero de documento sea distinto de espacios y ceros, y que el tipo de documento tenga alguno de los siguientes valores: D, P, R, C &oacute; L</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLI. RECHAZ. POR NOM/APELL/RAZ. SOC. ERRONEO:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Las validaciones que se realizan son: <br></br>
+					*  Si el nombre, apellido-1 y raz&oacute;n social vienen informados ser&iacute;a err&oacute;neo.<br></br>
+					*  Si la raz&oacute;n social no viene informada y el nombre y/o apellido-1 no esta informado, ser&iacute;a err&oacute;neo.<br></br>
+					*  Si el anagrama de cliente global calculado es igual a espacios ser&iacute;a err&oacute;neo.</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >TOTAL CLIENTES TW EN TABLAS QG..................:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de TW que est&aacute;n en QG</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES ERR. EN QG POR NO EXISTIR EN ORIGEN..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que no se concilian porque est&aacute;n en QG y no est&aacute;n en el fichero de TW, son altas que han llegado a QG entre que se ha realizado el backup de TW y el inicio de la Conciliaci&oacute;n.</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >  - CLIENTES DE CLGL NO TRAT. POR VALOR DEL TMS...:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Cliente de QG con actulalizaci&oacute;n en QG posterior a la creaci&oacute;n del fichero de Conciliaci&oacute;n de TW, estos clientes no se tratan, se conciliar&aacute;n en la siguiente ejecuci&oacute;n de la Conciliaci&oacute;n </td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >CLIENTES TW EN SISTEMA ORIGEN CONCILIADOS.......:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de TW que se han conciliado (A24-A25-A26-A27-A28)</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >CLIENTES TW EN QG CONCILIADOS...................:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >N&deg; de clientes de QG que se han conciliado (A31-A32-A33)</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - CLIENTES TW OK  EN TABLAS QG..............:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que est&aacute;n igual en QG y en TW</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE ALTA DE CLIENTES TW EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que deber&iacute;an existir en QG y no existen</td>
+			</tr>
+			<tr>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >    - TOTAL MOVS. DE MOD. DE CLIENTES TW EN QG..:</td>
+				<td style="text-align:left; background-color:rgb(255,255,255);font-family: Arial,Helvetica,sans-serif;font-size: 8pt;" >Clientes que tienen informaci&oacute;n desactualizada en QG frente a TW</td>
+			</tr>
+		</tbody>
+	</table>
+		
+	<br></br>
+	</div>
+	
+	
+</div>
+</html>

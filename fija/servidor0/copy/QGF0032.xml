@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:18 a partir de la COPY QGCV2200 -->
+<!--
+   *IC* 18/FEB/2010 11:41:43 LIBPR.COPYS.QG00(QGCV2200)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG2200CO" Servicio="QGF0032" Cabecera="NATE" Descripcion="MOVIMIENTOS DE ALTA, BAJA Y MODIFICACION DE DIRECCIONES DE CLIENTE PROCEDENTE DE NSCO">
+  <NA_GRUPO Nombre="CV2200-ENTRADA">
+    <NA_CAMPO Nombre="CV2200-E-CO-TIP-MOV-CLI-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CV2200-E-IT-MOV-CLI-UNM" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="CV2200-E-CO-CLIENTE-NSCO" Tipo="2" Longitud="11"/>
+    <NA_CAMPO Nombre="CV2200-E-CO-CLIENTE-GBL-CLGL" Tipo="2" Longitud="11"/>
+    <NA_GRUPO Nombre="CV2200-E-UNM-PSN-DIR-MOD-GR">
+      <NA_CAMPO Nombre="CV2200-E-CO-SEC-DIR-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-TIP-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-SBT-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-PROVINCIA-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-ENT-POB-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-CALLE-UNM" Tipo="2" Longitud="6"/>
+      <NA_CAMPO Nombre="CV2200-E-DS-CALLE-UNM" Tipo="2" Longitud="30"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-POSTAL-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2200-E-DS-NOM-ATE-UNM" Tipo="2" Longitud="80"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-TEL-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-TEL-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-FAX-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-FAX-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-VIA-INE" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2200-E-IT-ALT-DIR-PSN-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-USU-ALT-DIR-PSN" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2200-E-IT-MOD-DIR-PSN-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-USU-MOD-DIR-PSN" Tipo="2" Longitud="22"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CV2200-E-UNM-CRR-DIR-MOD-GR">
+      <NA_CAMPO Nombre="CV2200-E-CO-SEC-DIR-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-TIP-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-SBT-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-PROVINCIA-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-ENT-POB-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-CALLE-UNM" Tipo="2" Longitud="6"/>
+      <NA_CAMPO Nombre="CV2200-E-DS-CALLE-UNM" Tipo="2" Longitud="30"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-POSTAL-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2200-E-DS-NOM-ATE-UNM" Tipo="2" Longitud="80"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-TEL-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-TEL-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-FAX-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-NU-FAX-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-VIA-INE" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2200-E-IT-ALT-DIR-CRR-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-USU-ALT-DIR-CRR" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2200-E-IT-MOD-DIR-CRR-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-USU-MOD-DIR-CRR" Tipo="2" Longitud="22"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CV2200-E-UNM-ELC-DIR-MOD-GR">
+      <NA_CAMPO Nombre="CV2200-E-CO-SEC-DIR-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-TIP-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-SBT-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2200-E-NO-DIR-CORREO" Tipo="2" Longitud="80"/>
+      <NA_CAMPO Nombre="CV2200-E-IT-ALT-CRR-ELC-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-USU-ALT-CRR-ELC" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2200-E-IT-MOD-CRR-ELC-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2200-E-CO-USU-MOD-CRR-ELC" Tipo="2" Longitud="22"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

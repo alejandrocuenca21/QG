@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 10:44:30 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC265CO" Servicio="QGF0073" Descripcion ="ACTUALIZACION CAMPA&#209;AS C/D" LongDatosTotal ="268" LongDatosEntrada ="268" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CPN-CMC-CSM-DRH" Longitud = "15" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-CPN-CMC-CSM-DRH" Longitud = "60" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-OBS-CPN-CSM-DRH" Longitud = "160" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

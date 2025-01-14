@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Feb 14 10:13:16 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGR400CO" Servicio="QGF0099" Descripcion ="CONSULTA DE INDICADOR DE SATISFACCION" LongDatosTotal ="173" LongDatosEntrada ="9" LongDatosSalida ="164" HashDNA ="60dbe0752e489e3ea5e2d5170f6c36f3" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACS-INF-COX" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "IN-TIP-CLI-LIN-NGC" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-NTA-IND-STF" Longitud = "4" Tipo = "5" Decimales = "2" />
+    <NA_CAMPO Nombre = "OB-IND-STF-CLI" Longitud = "150" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

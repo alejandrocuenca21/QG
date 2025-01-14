@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:17 a partir de la COPY QGCV0050 -->
+<!--
+   *IC* 18/FEB/2010 11:41:39 LIBPR.COPYS.QG00(QGCV0050)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG0050CO" Servicio="QGF0028" Cabecera="NATE" Descripcion="FORMATEA EL NUMERO DE DOCUMENTO SUSTITUYENDO LOS BLANCOS DE LA DERECHA POR CEROS">
+  <NA_CAMPO Nombre="CV0050-IND-CAMPO" Tipo="2" Longitud="1"/>
+  <NA_GRUPO Nombre="CV0050-E-REGISTRO">
+    <NA_CAMPO Nombre="CV0050-E-CO-CLI-NSCO" Tipo="2" Longitud="11"/>
+    <NA_CAMPO Nombre="CV0050-E-NUM-IDENFISC" Tipo="2" Longitud="15"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="CV0050-S-REGISTRO">
+    <NA_CAMPO Nombre="CV0050-S-CO-CLI-FORMAT" Tipo="2" Longitud="11"/>
+    <NA_CAMPO Nombre="CV0050-S-NUM-DOC-FORMAT" Tipo="2" Longitud="17"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

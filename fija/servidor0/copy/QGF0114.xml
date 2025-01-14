@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Fri Feb 04 09:28:23 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC810CO" Servicio="QGF0114" Descripcion ="ACTUALIZACION EVOLUCION DE LA SEGMENTACION" LongDatosTotal ="37" LongDatosEntrada ="37" LongDatosSalida ="0" HashDNA ="697255bb8fd8ee6766960b0c27ead90a" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SGM-UNF-UNM" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SBG-UNF-UNM" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-OPERACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SBG-DST" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

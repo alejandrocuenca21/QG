@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:22 a partir de la COPY QGECIC2M -->
+<!--
+   *IC* 18/FEB/2010 11:42:15 LIBPR.COPYS.QG00(QGECIC2M)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QGECI2CO" Servicio="QGF0053" Cabecera="NATE" Descripcion="MODULO QUE SE INVOCA CUANDO UN PROGRAMA DE APLICACION, RECIBE AL EJECUTAR UN COMANDO,UNA CONDICION DE EXCEPCION QUE NO LE PERMITE PROSEGUIR LA EJECUCION">
+  <NA_GRUPO Nombre="QGECIC2M">
+    <NA_CAMPO Nombre="CIC2-COMANDO" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="CIC2-RECURSO" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CIC2-EIBRESP" Tipo="3" Longitud="8"/>
+    <NA_CAMPO Nombre="CIC2-EIBRESP2" Tipo="3" Longitud="4"/>
+    <NA_CAMPO Nombre="CIC2-ADICIONAL" Tipo="2" Longitud="200"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

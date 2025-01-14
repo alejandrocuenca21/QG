@@ -1,0 +1,119 @@
+<project name="qg" default="entregar-desplegar" basedir=".">
+  <description>
+    Cliente Global
+  </description>
+  <!-- set global properties for this build -->
+  <property name="root" location="servidor1" />
+  <property name="src" location="${root}/java"/>
+  <property name="lib" location="${root}/java" />
+  <property name="fija" location="construccion/fija"/>
+  <property name="war" location="war"/>
+  <property name="construccion" location="construccion"/>
+  <property name="build" location="build"/>
+  <property name="pathEntrega" location="../distribucion" />
+  <property name="APP_NAME" value="qg" />
+  
+  <!--Classpath -->
+  <path id="project.class.path">
+    <pathelement location="${classpath}"/>
+    <pathelement location="/opt/na/v5.1/classes"/>
+    <fileset dir="${lib}">
+        <include name="**/*.jar"/>
+      </fileset>
+  </path>
+
+  
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp>
+      <format property="QG_TSTAMP" pattern="yyyy_MM_dd" />
+      <format property="QG_FOLDER_TSTAMP" pattern="yyyy-MM-dd" />
+    </tstamp>
+    <delete dir="${construccion}" />
+    <mkdir dir="${construccion}"/>
+    
+    <delete dir="${build}" />
+    <delete dir="${fija}" />
+    <delete dir="${pathEntrega}/servidor1" />
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+    <mkdir dir="${fija}"/>
+  </target>
+  
+  <target name="copy-resources">
+    <copy todir="${fija}">
+        <fileset dir="${root}/html"/>
+    </copy>  
+    
+    <mkdir dir="${build}/jsp" />
+    <copy todir="${build}\jsp">
+    	<fileset dir="${fija}/jsp"/>
+    </copy>
+    
+    <copy todir="${build}">
+        <fileset dir="${root}/html"/>
+    </copy>
+
+    <delete dir="${fija}/jsp" />
+    <copy todir="${build}\WEB-INF\classes">
+        <fileset dir="${root}/html/resources"/>
+    </copy> 
+    
+    <copy todir="${build}\WEB-INF">
+        <fileset dir="${root}/html/private"/>
+    </copy>
+    <mkdir dir="${build}\logs"/>
+    
+    <copy todir="${build}\WEB-INF\lib">
+      <fileset dir="${lib}">
+        <include name="**/*.jar"/>
+      </fileset>
+    </copy>
+    <delete dir="${fija}/private" />
+    <delete dir="${fija}/resources" />
+  </target>
+
+  <target name="compile" description="compilando los fuentes">
+        
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}\WEB-INF\classes" fork="true" source="1.4" target="1.4" encoding="iso-8859-1">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+  
+  <target name="generar" depends="init, copy-resources, compile">
+  </target>
+  
+  <target name="generar-war" depends="generar">
+	<delete dir="${build}/../war" />
+	 <mkdir dir="${build}/../war"/>
+     <zip zipfile="${build}/../war/${APP_NAME}_${QG_TSTAMP}.war" includes="*.*">   
+      <zipfileset dir="${root}/html" prefix=""/>     
+     </zip>
+     <tar tarfile="${build}/../war/${APP_NAME}_${QG_TSTAMP}.tar" basedir="${fija}"/>     
+  
+  </target>
+  
+  <target name="entregar-war" depends="generar-war">
+    <copy toFile="${pathEntrega}\servidor1\${APP_NAME}.tar" file="${build}/../war/${APP_NAME}_${QG_TSTAMP}.tar"/>
+    <copy toFile="${pathEntrega}\servidor1\${APP_NAME}.war" file="${build}/../war/${APP_NAME}_${QG_TSTAMP}.war"/>
+  </target>
+
+<target name="entregar-desplegar" depends="entregar-war">
+	<delete dir="${build}/../war" />
+	 <mkdir dir="${build}/../war"/>
+	<mkdir dir="${pathEntrega}/servidor1/web" />
+     <zip zipfile="${build}/../war/${APP_NAME}_${QG_TSTAMP}.war" includes="*.*">   
+      <zipfileset dir="${build}" prefix=""/>     
+     </zip>    
+	<copy toFile="${pathEntrega}\servidor1\web\${APP_NAME}.war" file="${build}/../war/${APP_NAME}_${QG_TSTAMP}.war"/>
+	  <delete dir="${build}" />
+	  <delete dir="${fija}" />
+    <delete dir="${war}" />
+    <delete dir="${construccion}" />
+    <delete file="${pathEntrega}\servidor1\${APP_NAME}.tar" />
+    <delete file="${pathEntrega}\servidor1\${APP_NAME}.war" />
+    
+  </target>
+</project>

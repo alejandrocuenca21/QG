@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Jan 25 15:02:31 MET 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="SB" Cabecera="NATESB" Programa ="SCTR_VX_VXF0011" Servicio="VXF0011" Descripcion ="CONSULTA SEGMENTACION COMERCIAL DE CLIENTE" LongDatosTotal ="24" LongDatosEntrada ="18" LongDatosSalida ="6" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-TIP-DOC-NSCO" Longitud = "1" Tipo = "SB_RPRString" />
+    <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "SB_RPRString" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "CO-SEGMENTO-UNM" Longitud = "3" Tipo = "SB_RPRString" />
+    <NA_CAMPO Nombre = "CO-SUBSEGMENTO-UNM" Longitud = "3" Tipo = "SB_RPRString" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

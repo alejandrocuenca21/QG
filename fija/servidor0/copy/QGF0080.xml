@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 10:51:30 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC602CO" Servicio="QGF0080" Descripcion ="CONSULTA DE TIPO DE COMUNICACION C/D" LongDatosTotal ="5105" LongDatosEntrada ="3" LongDatosSalida ="5102" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-OPR-TP-COMUNICA" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "CMC-OPR-VAL-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-OPR-TP-COMUNICA" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-OPR-TP-COMUNICA" Longitud = "60" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-PROG-MOD" Longitud = "8" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

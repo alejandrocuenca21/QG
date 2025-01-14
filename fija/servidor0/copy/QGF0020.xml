@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:19:56 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC131CO" Servicio="QGF0020" Descripcion ="DESCRIPCION DEL NIVEL DE CONFIDENCIALIDAD" LongDatosTotal ="163" LongDatosEntrada ="1" LongDatosSalida ="162" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-NIVEL-CONFIDEN" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "CFL-NIV-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "CO-NIVEL-CONFIDEN" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NIVEL-CONFIDEN" Longitud = "15" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

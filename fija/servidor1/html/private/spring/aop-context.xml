@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<!--
+Contexto de Spring para los interceptores.
+-->
+
+<beans>
+
+	<!-- Advice -->    
+    <bean id="servicioExceptionHandlerAdvice" class="com.telefonica.ssnn.qg.handlers.QGServicioExceptionHandler" />
+    <bean id="daoExceptionHandlerAdvice" class="com.telefonica.ssnn.qg.handlers.QGDaoExceptionHandler" />
+    
+    <bean id="servicioExceptionHandlerAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    	<property name="advice" ref="servicioExceptionHandlerAdvice" />
+    	<property name="pattern" value=".*" />
+    </bean>
+    
+    <bean id="daoExceptionHandlerAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    	<property name="advice" ref="daoExceptionHandlerAdvice" />
+    	<property name="pattern" value=".*" />
+    </bean>
+    
+    <bean id="serviceAutoProxy" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+    	<property name="beanNames" value="servicio.*" />
+    	<property name="interceptorNames">
+    		<list>
+    			<idref bean="servicioExceptionHandlerAdvisor"/>
+    		</list>
+    	</property>
+    </bean>
+    
+    <bean id="daoAutoProxy" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+    	<property name="beanNames" value="dao.*" />
+    	<property name="interceptorNames">
+    		<list>
+    			<idref bean="daoExceptionHandlerAdvisor"/>
+    		</list>
+    	</property>
+    </bean>
+    
+
+</beans>

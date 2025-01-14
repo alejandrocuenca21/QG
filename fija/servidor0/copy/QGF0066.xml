@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Tue Mar 22 09:17:31 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC225CO" Servicio="QGF0066" Descripcion ="CONSULTA SEGMENTOS MERCADO (C/D)" LongDatosTotal ="1324" LongDatosEntrada ="2" LongDatosSalida ="1322" HashDNA ="d0a9590160f8d1fedf683c7b8edee0a4" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "UNM-UNF-SGM-GR" Occurs = "30" >
+      <NA_CAMPO Nombre = "CO-SGM-UNF-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SEGMENTO-UNM" Longitud = "40" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-UNI-NGC-CLI-GBL" Longitud = "1" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 10:39:26 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC220CO" Servicio="QGF0065" Descripcion ="CONSULTA AMBITO DE APLICACION(C/D)" LongDatosTotal ="7705" LongDatosEntrada ="3" LongDatosSalida ="7702" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-AMB-APL-CSM-DRH" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DRH-CSM-AMB-VAL-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-AMB-APL-CSM-DRH" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-AMB-APL-CSM-DRH" Longitud = "60" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALTA" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-PROG-MOD" Longitud = "8" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

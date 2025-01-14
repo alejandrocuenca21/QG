@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:24:41 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC136CO" Servicio="QGF0026" Descripcion ="DESCRIPCION DEL TIPO DE IMPRESION (LNM)" LongDatosTotal ="2528" LongDatosEntrada ="1" LongDatosSalida ="2527" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-TIPO-IPR-FAC" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "IPR-TIP-GR" Occurs = "25" >
+      <NA_CAMPO Nombre = "CO-TIPO-IPR-FAC" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-TIPO-IPR-FAC" Longitud = "100" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

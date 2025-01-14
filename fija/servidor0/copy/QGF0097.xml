@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Fri Oct 15 18:12:31 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGR600CO" Servicio="QGF0097" Descripcion ="CONSULTA DE DIRECCIONES DE INTERLOCUTORES" LongDatosTotal ="26253" LongDatosEntrada ="55" LongDatosSalida ="26198" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACS-INF-COX" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-INTERLOCUTOR" Longitud = "15" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-DIRE" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-USO-DIR" Longitud = "2" Tipo = "2" />
+    <NA_GRUPO Nombre = "SCC-NUM-PGN-GR" >
+      <NA_CAMPO Nombre = "NU-SECUEN-DIR" Longitud = "4" Tipo = "3" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "4" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-TW" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_GRUPO Nombre = "SCC-NUM-PGN-GR" >
+      <NA_CAMPO Nombre = "NU-SECUEN-DIR" Longitud = "4" Tipo = "3" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "4" Tipo = "3" />
+    <NA_CAMPO Nombre = "IND-PGN-IN" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-TW" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TIP-CLI-LIN-NGC" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_GRUPO Nombre = "DOM-IDF-GR" Occurs = "60" >
+      <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-INTERLOCUTOR" Longitud = "15" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-SECUEN-DIR" Longitud = "4" Tipo = "3" />
+      <NA_CAMPO Nombre = "CO-TIPO-DIRE" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-USO-DI" Longitud = "2" Tipo = "2" />
+      <NA_GRUPO Nombre = "DOM-IDF-DAT-GR" >
+        <NA_CAMPO Nombre = "NU-POSTAL" Longitud = "5" Tipo = "3" />
+        <NA_CAMPO Nombre = "CO-PROVINCIA" Longitud = "2" Tipo = "3" />
+        <NA_CAMPO Nombre = "NU-ENTIDAD-POBLACION" Longitud = "5" Tipo = "3" />
+        <NA_CAMPO Nombre = "NU-CALLE" Longitud = "5" Tipo = "3" />
+        <NA_CAMPO Nombre = "NU-FINCA" Longitud = "5" Tipo = "2" />
+        <NA_CAMPO Nombre = "IN-BIS-DUPLIC" Longitud = "1" Tipo = "2" />
+        <NA_CAMPO Nombre = "NU-BLOQUE" Longitud = "6" Tipo = "2" />
+        <NA_CAMPO Nombre = "NU-ESCALERA" Longitud = "2" Tipo = "2" />
+        <NA_CAMPO Nombre = "NU-PLANTA" Longitud = "3" Tipo = "2" />
+        <NA_CAMPO Nombre = "IN-LETRA" Longitud = "8" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-PAIS-CH" Longitud = "3" Tipo = "2" />
+        <NA_CAMPO Nombre = "DOM-LAR-DS" Longitud = "150" Tipo = "2" />
+        <NA_CAMPO Nombre = "DS-OBSERVACIONES" Longitud = "80" Tipo = "2" />
+        <NA_CAMPO Nombre = "TEL-LOG-DOM-IN" Longitud = "1" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-TIP-RELAC-CLI" Longitud = "2" Tipo = "2" />
+        <NA_CAMPO Nombre = "DS-TIP-RELAC-CLI" Longitud = "40" Tipo = "2" />
+        <NA_CAMPO Nombre = "FILLER" Longitud = "57" Tipo = "2" />
+      </NA_GRUPO>
+      <NA_CAMPO Nombre = "FX-ALTA" Longitud = "10" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-BAJA" Longitud = "10" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-ULT-MOD" Longitud = "10" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

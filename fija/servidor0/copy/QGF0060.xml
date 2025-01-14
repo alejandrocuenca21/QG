@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:27:15 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC123CO" Servicio="QGF0060" Descripcion ="BUSCADOR DE ESTADISTICAS" LongDatosTotal ="10520" LongDatosEntrada ="17" LongDatosSalida ="10503" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-RCU-ESD" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+    <NA_GRUPO Nombre = "ESD-BUS-GR" Occurs = "100" >
+      <NA_CAMPO Nombre = "CA-REG-TTD" Longitud = "15" Tipo = "4" />
+      <NA_CAMPO Nombre = "CA-REG-ACE" Longitud = "15" Tipo = "4" />
+      <NA_CAMPO Nombre = "CA-REG-REC" Longitud = "15" Tipo = "4" />
+      <NA_CAMPO Nombre = "CA-REG-ACE-UNF" Longitud = "15" Tipo = "4" />
+      <NA_CAMPO Nombre = "CA-REG-ACE-UNM" Longitud = "15" Tipo = "4" />
+      <NA_CAMPO Nombre = "CA-REG-REC-UNF" Longitud = "15" Tipo = "4" />
+      <NA_CAMPO Nombre = "CA-REG-REC-UNM" Longitud = "15" Tipo = "4" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

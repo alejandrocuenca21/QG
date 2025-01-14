@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:21 a partir de la COPY QGCV9900 -->
+<!--
+   *IC* 18/FEB/2010 11:42:02 LIBPR.COPYS.QG00(QGCV9900)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9900CO" Servicio="QGF0047" Cabecera="NATE" Descripcion="ACTUALIZA LAS TABLAS AUXILIARES DE CLIENTES">
+  <NA_CAMPO Nombre="IN-ACCION" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CVCL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="ERCL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="IT-ULT-MOD" Tipo="2" Longitud="26"/>
+  <NA_CAMPO Nombre="CO-CLIE-SIST-ORI" Tipo="2" Longitud="11"/>
+  <NA_CAMPO Nombre="IN-ESTADO-MOV-ERCL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="IN-ESTADO-MOV-CVCL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CO-ERROR" Tipo="2" Longitud="6"/>
+  <NA_CAMPO Nombre="IN-UNI-NGC-CLI-GBL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="DS-DET-MOV-CLI-TEXT" Tipo="2" Longitud="600"/>
+  <NA_CAMPO Nombre="DS-DET-MOV-CLI-GBL-TEXT" Tipo="2" Longitud="900"/>
+  <NA_CAMPO Nombre="DS-DET-MOV-CLI-TW-TEXT" Tipo="2" Longitud="300"/>
+  <NA_CAMPO Nombre="DS-DET-MOV-CLI-NSCO-TEXT" Tipo="2" Longitud="400"/>
+</NA_DESCRIPTOR>

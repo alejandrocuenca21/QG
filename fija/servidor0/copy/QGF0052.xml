@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:22 a partir de la COPY QGCVBYCO -->
+<!--
+   *IC* 18/FEB/2010 11:42:05 LIBPR.COPYS.QG00(QGCVBYCO)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QGBYCPCO" Servicio="QGF0052" Cabecera="NATE" Descripcion="ACCEDE A LA BD DE SECURIZACION DE SERVICIOS NA A PARTIR DEL ANAGRAMA Y DEL NOMBRE DEL SERVICIO PARA VER LOS ACCESOS PERMITIDOS DESDE OTROS SERVICIOS">
+  <NA_GRUPO Acceso="E" Nombre="CVBY-DATOS-ENTRADA">
+    <NA_CAMPO Nombre="CVBY-ANAGRAMA" Tipo="2" Longitud="4"/>
+    <NA_CAMPO Nombre="CVBY-SERVICIO" Tipo="2" Longitud="8"/>
+  </NA_GRUPO>
+  <NA_GRUPO Acceso="S" Nombre="CVBY-DATOS-SALIDA">
+    <NA_CAMPO Nombre="CVBY-RET" Tipo="2" Longitud="1"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:20 a partir de la COPY QGCV9406 -->
+<!--
+   *IC* 18/FEB/2010 11:41:58 LIBPR.COPYS.QG00(QGCV9406)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9406CO" Servicio="QGF0044" Cabecera="NATE" Descripcion="CALCULA EL ESTADO CONVERGENTE">
+  <NA_CAMPO Nombre="CV9406-CO-CLIENTE-CGBL" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9406-CO-ESTADO-LNA" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9406-IN-LN-ORI" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9406-CO-ESTADO-CLIENTE" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9406-FILLER" Tipo="2" Longitud="100"/>
+  <NA_CAMPO Nombre="CV9406-CO-ESTADO-CONV-S" Tipo="2" Longitud="1"/>
+</NA_DESCRIPTOR>

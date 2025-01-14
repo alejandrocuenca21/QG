@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon May 09 17:35:57 MEST 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGCB00CO" Servicio="QGF0121" Descripcion ="ADMINISTRACION ENTIDAD SISTEMAS EXTERNOS" LongDatosTotal ="7330" LongDatosEntrada ="78" LongDatosSalida ="7252" HashDNA ="95116defe40f47299fd91d7ddda81757" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-MASI-SIS-EXT" Longitud = "4" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-SISTEMA-EXTERNO" Longitud = "15" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-SISTEMA-EXTERNO" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "SIS-EXT-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-MASI-SIS-EXT" Longitud = "4" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-SISTEMA-EXTERNO" Longitud = "15" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SISTEMA-EXTERNO" Longitud = "40" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALTA" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Mon May 03 17:56:32 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGO600CO" Servicio="QGF0092" Descripcion ="CONSULTA DE ATRIBUTOS DE UN COLECTIVO" LongDatosTotal ="577" LongDatosEntrada ="6" LongDatosSalida ="571" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-COLECTIVO" Longitud = "6" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "NO-COLECTIVO" Longitud = "160" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TP-ID-COLECTIVO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-TP-ID-COLECTIVO" Longitud = "160" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-FMT-IDF-ELE-CVO" Longitud = "250" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

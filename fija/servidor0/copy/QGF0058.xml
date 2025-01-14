@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:26:05 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC111CO" Servicio="QGF0058" Descripcion ="ACTUALIZAR BD DUPLICADOS Y ERRONEOS" LongDatosTotal ="40" LongDatosEntrada ="40" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IT-ALT-REG-GLB" Longitud = "26" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-UNI-NGC-CLI-GBL" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TUZ-TAB" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TUZ-BAS-DAT" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

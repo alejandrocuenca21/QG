@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Thu Feb 10 12:53:09 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC120CO" Servicio="QGF0059" Descripcion ="BUSCADOR DE ERRORES" LongDatosTotal ="24323" LongDatosEntrada ="69" LongDatosSalida ="24254" HashDNA ="f2d392f6959c9db0c1fc028bb19b444b" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "IND-PGN-IN" Longitud = "1" Tipo = "2" />
+    <NA_GRUPO Nombre = "ERR-BUS-GR" Occurs = "100" >
+      <NA_CAMPO Nombre = "IT-ALT-REG-GLB" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-UNI-NGC-CLI-GBL" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-DOCUMENTO" Longitud = "40" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-RAZON-SOCIAL" Longitud = "140" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ERROR" Longitud = "6" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

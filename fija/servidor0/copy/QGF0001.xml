@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Feb 16 10:21:39 MET 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGCL00CO" Servicio="QGF0001" Descripcion ="ALTA Y MODIFICACION DE CLIENTE PROCEDENTE DE NSCO" LongDatosTotal ="1315" LongDatosEntrada ="1315" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-TIP-MOV-CLI-UNM" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-MOV-CLI-UNM" Longitud = "26" Tipo = "2" />
+    <NA_GRUPO Nombre = "UNM-CLI-MOD-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CLI-PDR-UNM" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CLI-CAB-UNM" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-DOC-NSCO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOMBRE-UNM" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-1-UNM" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-2-UNM" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-EST-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SIT-EST-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-JRQ-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PAIS-NSCO" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-RAZ-ALT-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-IPR-FAC-UNM" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-INI-EST-CLI-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-CLI-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-ALT-CLI-UNM" Longitud = "22" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-MOD-CLI-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-MOD-CLI-UNM" Longitud = "22" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "UNM-SGM-MOD-GR" >
+      <NA_CAMPO Nombre = "CO-TIP-SGM-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-MOT-SGM-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SGM-FISCAL-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-SGM-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-ALT-SGM-UNM" Longitud = "22" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-MOD-SGM-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-MOD-SGM-UNM" Longitud = "22" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "UNM-PSN-DIR-MOD-GR" >
+      <NA_CAMPO Nombre = "CO-SEC-DIR-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-DIR-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SBT-DIR-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PROVINCIA-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ENT-POB-UNM" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALLE-UNM" Longitud = "6" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CALLE-UNM" Longitud = "30" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-POSTAL-UNM" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOM-ATE-UNM" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-TEL-UNM-1" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-TEL-UNM-2" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-FAX-UNM-1" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-FAX-UNM-2" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-VIA-INE" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-DIR-PSN-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-ALT-DIR-PSN" Longitud = "22" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-MOD-DIR-PSN-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-MOD-DIR-PSN" Longitud = "22" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "UNM-CRR-DIR-MOD-GR" >
+      <NA_CAMPO Nombre = "CO-SEC-DIR-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-DIR-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SBT-DIR-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PROVINCIA-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ENT-POB-UNM" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALLE-UNM" Longitud = "6" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CALLE-UNM" Longitud = "30" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-POSTAL-UNM" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOM-ATE-UNM" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-TEL-UNM-1" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-TEL-UNM-2" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-FAX-UNM-1" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-FAX-UNM-2" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-VIA-INE" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-DIR-CRR-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-ALT-DIR-CRR" Longitud = "22" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-MOD-DIR-CRR-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-MOD-DIR-CRR" Longitud = "22" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "UNM-ELC-DIR-MOD-GR" >
+      <NA_CAMPO Nombre = "CO-SEC-DIR-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-DIR-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SBT-DIR-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-DIR-CORREO" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-CRR-ELC-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-ALT-CRR-ELC" Longitud = "22" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-MOD-CRR-ELC-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USU-MOD-CRR-ELC" Longitud = "22" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

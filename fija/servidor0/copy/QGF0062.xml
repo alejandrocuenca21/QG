@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Nov 03 10:47:43 MET 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC205CO" Servicio="QGF0062" Descripcion ="DETALLE CONSENTIMIENTO/DERECHO" LongDatosTotal ="4614" LongDatosEntrada ="3" LongDatosSalida ="4611" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "DS-CSM-DRH-INTERNO" Longitud = "100" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-CSM-DRH-EXTERNO" Longitud = "160" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-DRH-LOPD-FIJ" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-DRH-LOPD-MVL" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-CSM-DRH-EXL-CLI" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-EJC-CSM-DRH-ALT" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CA-DIAS-LIBERACION" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-DIAS-NVA-CMC" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-TIP-LGC-CSM-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-NIV-APL-CSM-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-NIV-APL-CSM-DRH" Longitud = "60" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-OBJETO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-TIPO-OBJETO" Longitud = "20" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-AMB-APL-CSM-DRH" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-AMB-APL-CSM-DRH" Longitud = "60" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-SEC-OBS-CSM-DRH" Longitud = "12" Tipo = "3" />
+    <NA_CAMPO Nombre = "DS-OBS-CSM-DRH" Longitud = "160" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-APLIC-PUB-CONT" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-ALTA" Longitud = "26" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-PROG-MOD" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "SEG-ASO-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DRH-DSC-SGM-ASN-GR" Occurs = "30" >
+      <NA_CAMPO Nombre = "IN-DRH-ASO-SGM" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SGM-UNF-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SGM-UNF-UNM" Longitud = "20" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "CMC-MDO-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DSC-CMC-MDO-ASN-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "IN-DRH-ASO-MDO-CMC" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-MEDIO-COMUNICA" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-MEDIO-COMUNICA" Longitud = "60" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:20 a partir de la COPY QGCV9800 -->
+<!--
+   *IC* 18/FEB/2010 11:42:01 LIBPR.COPYS.QG00(QGCV9800)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9800CO" Servicio="QGF0046" Cabecera="NATE" Descripcion="ACTUALIZA LAS TABLAS AUXILIARES DE DIRECCIONES">
+  <NA_CAMPO Nombre="CV9800-IN-ACCION" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9800-IN-ERDI" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9800-IN-MVDI" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9800-IT-ULT-MOD" Tipo="2" Longitud="26"/>
+  <NA_CAMPO Nombre="CV9800-CO-CLIE-SIST-ORI" Tipo="2" Longitud="11"/>
+  <NA_CAMPO Nombre="CV9800-IN-ESTADO-MOV" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9800-CO-ERROR" Tipo="2" Longitud="6"/>
+  <NA_CAMPO Nombre="CV9800-NU-SEC-DIR-EXT" Tipo="2" Longitud="11"/>
+  <NA_CAMPO Nombre="CV9800-IN-UNI-NGC-CLI-GBL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9800-DS-DET-MOV-DIR" Tipo="2" Longitud="600"/>
+  <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="100"/>
+</NA_DESCRIPTOR>

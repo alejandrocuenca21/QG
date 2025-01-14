@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 10:42:14 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC238CO" Servicio="QGF0069" Descripcion ="ACTUALIZACION TEXTO LEGAL ASOCIADO C/D" LongDatosTotal ="3099" LongDatosEntrada ="3099" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-SEC-TXT-LEG-CSM" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "DS-TXT-LEG-CSM-DRH" Longitud = "3000" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-ALTA" Longitud = "26" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-PROG-MOD" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

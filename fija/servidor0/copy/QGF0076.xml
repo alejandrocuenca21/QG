@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 10:46:18 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC600CO" Servicio="QGF0076" Descripcion ="GESTION C/D: LISTADO C/D DE UN CLIENTE" LongDatosTotal ="7862" LongDatosEntrada ="30" LongDatosSalida ="7832" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-OBJETO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-EST-CSM-DRH" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-CMB-EST" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-CMB-EST" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "CLI-DRH-DAT-GR" Occurs = "30" >
+      <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CSM-DRH-INTERNO" Longitud = "100" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-LGC-CSM-DRH" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-OBJETO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-DAT-OJT-APL-PFE" Longitud = "15" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-SEC-TIPO-OBJETO" Longitud = "15" Tipo = "3" />
+      <NA_CAMPO Nombre = "NU-SEC-EVE-CSM-DRH" Longitud = "12" Tipo = "3" />
+      <NA_CAMPO Nombre = "CO-EST-CSM-DRH" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-EST-CSM-DRH" Longitud = "60" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-CAMBIO-ESTADO" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO" Longitud = "8" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:22 a partir de la COPY QGCVER00 -->
+<!--
+   *IC* 18/FEB/2010 11:42:09 LIBPR.COPYS.QG00(QGCVER00)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QGERROCO" Servicio="QGF0054" Cabecera="NATE" Descripcion="RUTINA DE ERRORES DB2">
+  <NA_CAMPO Nombre="CVERRO-SQLCA" Tipo="2" Longitud="136"/>
+  <NA_CAMPO Nombre="CVERRO-PROGRAMA" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CVERRO-TABLA" Tipo="2" Longitud="16" Occurs="3"/>
+  <NA_CAMPO Nombre="CVERRO-SENTENCIA" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CVERRO-MENSAJE" Tipo="2" Longitud="5"/>
+</NA_DESCRIPTOR>

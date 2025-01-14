@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Fri Nov 18 08:32:44 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGP100CO" Servicio = "QGF0138" Descripcion = "ADMINISTRACION DE PRESEGMENTACION DESDE WEB" LongDatosTotal = "44" LongDatosEntrada = "44" LongDatosSalida = "0" HashDNA = "42773c65d09f4b4e921ec9e511556698" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-SEC-PSG" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SUBSEGMENTO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-OFICINA-AT" Longitud = "5" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-NEMO-TANDEM" Longitud = "7" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

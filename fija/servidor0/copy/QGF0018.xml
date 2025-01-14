@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:18:47 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC129CO" Servicio="QGF0018" Descripcion ="DESCRIPCION DEL IDIOMA" LongDatosTotal ="413" LongDatosEntrada ="1" LongDatosSalida ="412" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-IDIOMA" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "IDI-TAB-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "CO-IDIOMA" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-IDIOMA" Longitud = "40" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

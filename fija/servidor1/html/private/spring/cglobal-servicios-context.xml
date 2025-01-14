@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+    
+     <bean id="servicio.ConsentimientosCliente" class="com.telefonica.ssnn.qg.buscador.consentimientos.servicio.impl.QGConsentimientosClientesServicioImpl">
+    	<property name="consentimientosDao" ref="dao.consentimientosClientes" />
+    </bean>
+    
+     <bean id="servicio.BuscadorClientes" class="com.telefonica.ssnn.qg.buscador.clientes.servicio.impl.QGBuscadorClientesServicioImpl">
+    	<property name="buscadorClientesDao" ref="dao.buscadorClientes" />
+    </bean>
+    
+    <!-- SERVICIO para la auditoria -->
+    <bean id="servicio.Auditor" class="com.telefonica.ssnn.qg.auditoria.servicio.impl.QGAuditorServicioImpl">
+    	<property name="auditorDao" ref="dao.auditor" />
+    </bean>
+    
+    <bean id="servicio.InformesConvivencia" class="com.telefonica.ssnn.qg.informes.servicio.impl.QGInformesConvivenciaServicioImpl">
+    	<property name="informesConvivenciaDao" ref="dao.informesConvivencia" />
+    </bean>
+    
+    <bean id="servicio.GenerarInforme" class="com.telefonica.ssnn.qg.informes.servicio.impl.QGGenerarInformeServicioImpl">
+    </bean>
+    
+    <bean id="servicio.Campanias" class="com.telefonica.ssnn.qg.administracion.campanias.servicio.impl.QGCampaniasServicioImpl">
+    	<property name="campaniasDao" ref="dao.campanias" />
+    </bean>
+    <!-- CONSENTIMIENTOS (ANIADIDO EL DAO DE SEGMENTOS GENERICO)-->
+    <bean id="servicio.Consentimientos" class="com.telefonica.ssnn.qg.administracion.consentimientos.servicio.impl.QGConsentimientosServicioImpl">
+    	<property name="consentimientosDao" ref="dao.consentimientos" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+    
+    <bean id="servicio.Medios" class="com.telefonica.ssnn.qg.administracion.medios.servicio.impl.QGMediosServicioImpl">
+    	<property name="mediosDao" ref="dao.medios" />
+    </bean>
+    
+    <bean id="servicio.Ubicacion" class="com.telefonica.ssnn.qg.administracion.ubicacion.servicio.impl.QGUbicacionServicioImpl">
+    	<property name="ubicacionDao" ref="dao.ubicacion" />
+    </bean>
+    <!-- SEGMENTACION (ANIADIDO EL DAO DE SEGMENTOS GENERICO) -->
+    <bean id="servicio.Segmentacion" class="com.telefonica.ssnn.qg.administracion.segmentacion.servicio.impl.QGSegmentacionesServicioImpl">
+    	<property name="segmentacionDAO" ref="dao.segmentacion" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+    <!-- ENCARTES (ANIADIDO EL DAO DE SEGMENTOS GENERICO) -->
+	
+      <bean id="servicio.Encartes" class="com.telefonica.ssnn.qg.administracion.encartes.servicio.impl.QGEncartesServicioImpl">
+    	<property name="encartesDao" ref="dao.encartes" />
+    	<property name="derechosDao" ref="dao.derechos" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+    <!-- CREATIVIDAD -->
+      <bean id="servicio.Creatividad" class="com.telefonica.ssnn.qg.administracion.creatividad.servicio.impl.QGCreatividadServicioImpl">
+      	<property name="derechosDao" ref="dao.derechos" />
+    	<property name="creatividadDao" ref="dao.creatividad" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+   	 </bean>
+    <!-- SEGMENTACION TRADUCCION -->
+       <bean id="servicio.SegmentacionTraduccion" class="com.telefonica.ssnn.qg.administracion.segmentacion.servicio.impl.QGSegmentacionesTraduccionServicioImpl">
+    	<property name="segmentacionDAO" ref="dao.segmentacionTraduccion" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+    <!-- MENSAJES DE ERROR -->
+       <bean id="servicio.MensError" class="com.telefonica.ssnn.qg.administracion.menserror.servicio.impl.QGMensajeErrorServicioImpl">
+    	<property name="mensajeError" ref="dao.menserror" />
+    </bean>    
+   	<!-- AUTORIZACIONES - AUTORIZACIONES -->
+    <bean id="servicio.Autorizaciones" class="com.telefonica.ssnn.qg.administracion.autorizaciones.servicio.impl.QGAutorizacionesServicioImpl">
+    	<property name="autorizaciones" ref="dao.autorizaciones" />
+    </bean>  
+    <!-- AUTORIZACIONES - SISTEMAS EXTERNOS -->
+    <bean id="servicio.SistemasExternos" class="com.telefonica.ssnn.qg.administracion.autorizaciones.servicio.impl.QGSistemasExternosServicioImpl">
+    	<property name="sistemasExternos" ref="dao.sistemasExternos" />
+    </bean>  
+   	<!-- AUTORIZACIONES - SERVICIOS NA-->
+    <bean id="servicio.ServiciosNA" class="com.telefonica.ssnn.qg.administracion.autorizaciones.servicio.impl.QGServiciosNAServicioImpl">
+    	<property name="serviciosNA" ref="dao.serviciosNA" />
+    </bean>  
+    
+	<!-- INFORMES DE CONVIVENCIA EXCEL-->
+	<bean id="servicio.InformeExcel" class="com.telefonica.ssnn.qg.informeExcel.servicio.impl.QGInformeExcelServicioImpl">
+    	<property name="informesConvivenciaExcelDao" ref="dao.informeExcelConvivencia" />
+    </bean>
+ 
+     <!-- SEGMENTACION PRESEGMENTACION -->
+    <bean id="servicio.SegmentacionPreseg" class="com.telefonica.ssnn.qg.administracion.segmentacion.servicio.impl.QGSegmentacionesPresegServicioImpl">
+    	<property name="segmentacionDAO" ref="dao.segmentacionPreseg" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+ 
+ 	<!-- SEGMENTACION REGLAS -->
+    <bean id="servicio.SegmentacionReglas" class="com.telefonica.ssnn.qg.administracion.segmentacion.servicio.impl.QGSegmentacionesReglasServicioImpl">
+    	<property name="segmentacionDAO" ref="dao.segmentacionReglas" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+ 
+ 	 <!-- SEGMENTACION REGLAS CONTRATOS-->
+    <bean id="servicio.SegmentacionContratos" class="com.telefonica.ssnn.qg.administracion.segmentacion.servicio.impl.QGSegmenRegContratosServicioImpl">
+    	<property name="segmentacionDAO" ref="dao.segmentacionContratos" />
+    	<property name="segmentosDao" ref="dao.segmentos" />
+    </bean>
+    
+</beans>

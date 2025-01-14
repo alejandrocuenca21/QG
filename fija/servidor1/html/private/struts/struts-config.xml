@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+  <!-- ========== Data Sources Definitions =================================== -->
+  <!--
+    Define your Struts data sources in a file called struts-data-sources.xml and place
+    it in your merge directory.
+  -->
+
+  <!-- ========== Form Bean Definitions =================================== -->
+  <form-beans>
+
+    <form-bean
+      name="QGSegmenRegContratosForm"
+      type="com.telefonica.ssnn.qg.administracion.segmentacion.struts.forms.QGSegmenRegContratosForm"
+    />
+    <form-bean
+      name="QGDatosGeneralesForm"
+      type="com.telefonica.ssnn.qg.buscador.clientes.struts.forms.QGDatosGeneralesForm"
+    />
+    <form-bean
+      name="QGConsentimientosClienteForm"
+      type="com.telefonica.ssnn.qg.buscador.consentimientos.struts.forms.QGConsentimientosClienteForm"
+    />
+    <form-bean
+      name="QGSistemasExternosForm"
+      type="com.telefonica.ssnn.qg.administracion.autorizaciones.struts.forms.QGSistemasExternosForm"
+    />
+    <form-bean
+      name="QGSegmentacionesTraduccionForm"
+      type="com.telefonica.ssnn.qg.administracion.segmentacion.struts.forms.QGSegmentacionesTraduccionForm"
+    />
+    <form-bean
+      name="QGHistorialConsentimientosForm"
+      type="com.telefonica.ssnn.qg.buscador.consentimientos.struts.forms.QGHistorialConsentimientosForm"
+    />
+    <form-bean
+      name="QGInformeExcelConvivenciaForm"
+      type="com.telefonica.ssnn.qg.informeExcel.struts.forms.QGInformeExcelConvivenciaForm"
+    />
+    <form-bean
+      name="QGMensajeErrorForm"
+      type="com.telefonica.ssnn.qg.administracion.menserror.struts.forms.QGMensajeErrorForm"
+    />
+    <form-bean
+      name="QGAutorizacionesForm"
+      type="com.telefonica.ssnn.qg.administracion.autorizaciones.struts.forms.QGAutorizacionesForm"
+    />
+    <form-bean
+      name="QGSegmentacionesForm"
+      type="com.telefonica.ssnn.qg.administracion.segmentacion.struts.forms.QGSegmentacionesForm"
+    />
+    <form-bean
+      name="QGSegmentacionesPresegForm"
+      type="com.telefonica.ssnn.qg.administracion.segmentacion.struts.forms.QGSegmentacionesPresegForm"
+    />
+    <form-bean
+      name="QGServiciosNAForm"
+      type="com.telefonica.ssnn.qg.administracion.autorizaciones.struts.forms.QGServiciosNAForm"
+    />
+    <form-bean
+      name="QGMediosComunicacionForm"
+      type="com.telefonica.ssnn.qg.administracion.medios.struts.forms.QGMediosComunicacionForm"
+    />
+    <form-bean
+      name="QGDomiciliosClienteForm"
+      type="com.telefonica.ssnn.qg.buscador.clientes.struts.forms.QGDomiciliosClienteForm"
+    />
+    <form-bean
+      name="QGActualizacionConsentiemientoForm"
+      type="com.telefonica.ssnn.qg.buscador.consentimientos.struts.forms.QGActualizacionConsentiemientoForm"
+    />
+    <form-bean
+      name="QGMovimientosTratadosForm"
+      type="com.telefonica.ssnn.qg.informes.struts.forms.QGMovimientosTratadosForm"
+    />
+    <form-bean
+      name="QGTiposUbicacionForm"
+      type="com.telefonica.ssnn.qg.administracion.ubicacion.struts.forms.QGTiposUbicacionForm"
+    />
+    <form-bean
+      name="QGListaClientesForm"
+      type="com.telefonica.ssnn.qg.buscador.clientes.struts.forms.QGListaClientesForm"
+    />
+    <form-bean
+      name="QGEncartesForm"
+      type="com.telefonica.ssnn.qg.administracion.encartes.struts.forms.QGEncartesForm"
+    />
+    <form-bean
+      name="QGSegmentacionesReglasForm"
+      type="com.telefonica.ssnn.qg.administracion.segmentacion.struts.forms.QGSegmentacionesReglasForm"
+    />
+    <form-bean
+      name="QGDocumentoDuplicadoForm"
+      type="com.telefonica.ssnn.qg.informes.struts.forms.QGDocumentoDuplicadoForm"
+    />
+    <form-bean
+      name="QGCampaniasForm"
+      type="com.telefonica.ssnn.qg.administracion.campanias.struts.forms.QGCampaniasForm"
+    />
+    <form-bean
+      name="QGConsentimientosDerechosForm"
+      type="com.telefonica.ssnn.qg.administracion.consentimientos.struts.forms.QGConsentimientosDerechosForm"
+    />
+    <form-bean
+      name="QGCreatividadForm"
+      type="com.telefonica.ssnn.qg.administracion.creatividad.struts.forms.QGCreatividadForm"
+    />
+    <form-bean
+      name="QGInformeExcelConciliacionForm"
+      type="com.telefonica.ssnn.qg.informeExcel.struts.forms.QGInformeExcelConciliacionForm"
+    />
+    <form-bean
+      name="QGDetalleConsentimientoForm"
+      type="com.telefonica.ssnn.qg.buscador.consentimientos.struts.forms.QGDetalleConsentimientoForm"
+    />
+    
+    <form-bean
+    name="QGElegirAccesoForm"
+    type="com.telefonica.ssnn.qg.seguridad.struts.forms.QGElegirAccesoForm"
+/>
+
+  </form-beans>
+
+  <!-- ========== Global Exceptions Definitions =================================== -->
+
+  <!-- ========== Global Forward Definitions =================================== -->
+
+  <!-- ========== Action Mapping Definitions =================================== -->
+   <action-mappings>
+    <action
+      path="/POEncartes"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGEncartesForm"
+      scope="request"
+      input="/vPOEncartes.do"
+      parameter="buscar, obtenerHistorico, baja, obtenerSegmentos, obtenerDerechos, obtenerUsuario, guardar, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vPOEncartes.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/ConsentimientosCliente"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGConsentimientosClienteForm"
+      scope="request"
+      input="/vConsentimientosCliente.do"
+      parameter="tipoObjeto,estadoGestion,buscar,irFiltrado"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vConsentimientosCliente.do"
+        redirect="false"
+      />
+      <forward
+        name="irFiltrado"
+        path="/vConsentimientosCliente.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/HistorialConsentimientos"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGHistorialConsentimientosForm"
+      scope="request"
+      input="/vHistorialConsentimientos.do"
+      parameter="buscar"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vAdministracionClientes.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/TiposUbicacion"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGTiposUbicacionForm"
+      scope="request"
+      input="/vTiposUbicacion.do"
+      parameter="buscar, modificar, alta, baja, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vTiposUbicacion.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Segmentaciones"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGSegmentacionesForm"
+      scope="request"
+      input="/vSegmentaciones.do"
+      parameter="cargarCodigosSegmento,cargarCodigosSubSegmento, buscar, obtenerUsuario, alta, baja, exportarPDF,obtenerHistorico"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vSegmentaciones.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/DetalleConsentimientosDerechos"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGConsentimientosDerechosForm"
+      scope="request"
+      input="/vDetalleConsentimientosDerechos.do"
+      parameter="irAlta, irDetalle, cargarAmbitos, obtenerSegmentos, obtenerMediosComunicacion, cargarNivelAplicacion, cargarTipoObjeto, alta, obtenerDatosDetalle,cargarDatosConsentimientos, modificar"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vDetalleConsentimientosDerechos.do"
+        redirect="false"
+      />
+      <forward
+        name="irAlta"
+        path="/vAltaConsentimientosDerechos.do"
+        redirect="false"
+      />
+      <forward
+        name="irDetalle"
+        path="/vDetalleConsentimientosDerechos.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Conciliacion"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGInformeExcelConciliacionForm"
+      scope="request"
+      input="/vConciliacion.do"
+      parameter="buscar, exportarConciliacion, exportarConciliacionPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vConciliacion.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/ConsentimientosDerechos"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGConsentimientosDerechosForm"
+      scope="request"
+      input="/vConsentimientosDerechos.do"
+      parameter="buscar, baja, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vConsentimientosDerechos.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/SistemasExternos"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGSistemasExternosForm"
+      scope="request"
+      input="/vSistemasExternos.do"
+      parameter="buscarLinNegocio, buscar, gestionar, exportarPDF, obtenerUsuario,anterior,siguiente,buscarParaModific"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vSistemasExternos.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Reglas"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGSegmentacionesReglasForm"
+      scope="request"
+      input="/vReglas.do"
+      parameter="irReglas, obtenerUsuario, cargarComboReglas, cargarReglas, cargarReglasSeg, cargarReglasTotal, exportarPDF, operarReglas"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vSegmentacionesReglas.do"
+        redirect="false"
+      />
+      <forward
+        name="irReglas"
+        path="/vReglas.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Campanias"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGCampaniasForm"
+      scope="request"
+      input="/vCampanias.do"
+      parameter="buscar, modificar, alta, baja, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vCampanias.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Creatividad"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGCreatividadForm"
+      scope="request"
+      input="/vCreatividad.do"
+      parameter="buscar, baja, guardar, obtenerUsuario, obtenerSegmentos, obtenerDerechos, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vCreatividad.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Traduccion"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGSegmentacionesTraduccionForm"
+      scope="request"
+      input="/vTraduccion.do"
+      parameter="cargarCodigosSegmento,cargarCodigosSubSegmento, buscar, obtenerUsuario, alta, baja, exportarPDF,obtenerHistorico"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vSegmentacionesTraduccion.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/DatosGenerales"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGDatosGeneralesForm"
+      scope="request"
+      input="/vDatosGenerales.do"
+      parameter="buscar, irDetalle"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vDatosGenerales.do"
+        redirect="false"
+      />
+      <forward
+        name="irDetalle"
+        path="/vFichaCliente.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/MediosComunicacion"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGMediosComunicacionForm"
+      scope="request"
+      input="/vMediosComunicacion.do"
+      parameter="buscar, modificar, alta, baja, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vMediosComunicacion.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Contratos"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGSegmenRegContratosForm"
+      scope="request"
+      input="/vContratos.do"
+      parameter="irContratos,obtenerUsuario, buscar, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vContratos.do"
+        redirect="false"
+      />
+      <forward
+        name="irContratos"
+        path="/vContratos.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Presegmentacion"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGSegmentacionesPresegForm"
+      scope="request"
+      input="/vPresegmentacion.do"
+      parameter="obtenerUsuario, cargarCodigosSegmento, cargarPresegmentaciones, cargarCodigosOfAtencion, cargarCodigosTandem, anterior, siguiente, exportarExcel, exportarPDF, cargarDescripcionSubsegmento, cargarDatosAdmin, operarPreseg"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vSegmentacionesPreseg.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/ServiciosNA"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGServiciosNAForm"
+      scope="request"
+      input="/vServiciosNA.do"
+      parameter="buscar, gestionar, siguiente, anterior, exportarPDF, obtenerUsuario"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vServiciosNA.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/ActualizacionConsentimiento"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGActualizacionConsentiemientoForm"
+      scope="request"
+      input="/vActualizacionConsentimiento.do"
+      parameter="actualizar"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vActualizacionConsentimiento.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/MovimientosTratados"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGMovimientosTratadosForm"
+      scope="request"
+      input="/vMovimientosTratados.do"
+      parameter="buscar, exportar, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vMovimientosTratados.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/MensError"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGMensajeErrorForm"
+      scope="request"
+      input="/vMensError.do"
+      parameter="buscar, gestionar, exportarPDF, obtenerUsuario, anterior, siguiente, buscarParaModific"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vMensError.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/DomiciliosCliente"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGDomiciliosClienteForm"
+      scope="request"
+      input="/vDomiciliosCliente.do"
+      parameter="buscar"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vDomiciliosCliente.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Autorizaciones"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGAutorizacionesForm"
+      scope="request"
+      input="/vAutorizaciones.do"
+      parameter="cargarComboSisEx, cargarComboSerNA, buscar, gestionar, exportarPDF, obtenerUsuario, anterior, siguiente, buscarParaModific"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vAutorizaciones.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/Convivencia"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGInformeExcelConvivenciaForm"
+      scope="request"
+      input="/vConvivencia.do"
+      parameter="buscar, exportar, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vConvivencia.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/ListaClientes"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGListaClientesForm"
+      scope="request"
+      input="/vListaClientes.do"
+      parameter="buscar, cargarTipoDocumento, exportarPDF, actualizarHistorial, borrarHistorial, buscarClienteHistorial, buscarVueltaAtras, obtenerHistorico"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vListaClientes.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/DetalleConsentimiento"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGDetalleConsentimientoForm"
+      scope="request"
+      input="/vDetalleConsentimiento.do"
+      parameter="buscar, cargarCombosConsentimientos, cargarComboMedios"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vDetalleConsentimiento.do"
+        redirect="false"
+      />
+    </action>
+    <action
+      path="/DocumentoDuplicado"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="QGDocumentoDuplicadoForm"
+      scope="request"
+      input="/vDocumentoDuplicado.do"
+      parameter="buscar, exportar, exportarPDF"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vDocumentoDuplicado.do"
+        redirect="false"
+      />
+    </action>
+	<action
+	    path="/eligeAcceso"
+	    name="QGElegirAccesoForm"
+	    type="org.springframework.web.struts.DelegatingActionProxy"
+	    scope="request"
+	    parameter="seleccionar"
+	    validate="false">
+	       <forward name="success" path="/vDocumentoDuplicado.do" redirect="false"/>	
+	</action>
+<action path="/vIndexMenu" forward="ml.mainMenu" />
+<action path="/vIndex" forward="ml.index" />
+<action path="/vConsentimientosDerechos" forward="ml.consentimientosDerechos" />
+<action path="/vTiposUbicacion" forward="ml.tiposUbicacion" />
+<action path="/vMediosComunicacion" forward="ml.mediosComunicacion" />
+<action path="/vCampanias" forward="ml.campanias" />
+<action path="/vAltaConsentimientosDerechos" forward="ml.altaConsentimiento" />
+<action path="/vDetalleConsentimientosDerechos" forward="ml.detalleConsentimiento" />
+<action path="/vInformesDuplicados" forward="ml.informesDuplicados" />
+<action path="/vMovimientosTratados" forward="ml.movimientosTratados" />
+<action path="/vFichaCliente" forward="ml.fichaCliente" />
+<action path="/vListaClientes" forward="ml.buscadorClientes" />
+<action path="/vSegmentaciones" forward="ml.segmentacion" />
+<action path="/vPOEncartes" forward="ml.encartes" />
+<action path="/vCreatividad" forward="ml.creatividad" />
+<action path="/vTraduccion" forward="ml.traduccion" />
+<action path="/vMensError" forward="ml.menserror" />
+<action path="/vAutorizaciones" forward="ml.autorizaciones" />
+<action path="/vConvivencia" forward="ml.convivencia" />
+<action path="/vConciliacion" forward="ml.conciliacion" />
+<action path="/vPresegmentacion" forward="ml.presegmentacion" />
+<action path="/vReglas" forward="ml.reglas" />
+<action path="/vContratos" forward="ml.contratos" />
+<action path="/vIndexMenu" forward="TFmainMenu" />
+
+  </action-mappings>
+
+  <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" />     
+
+  <message-resources parameter="ApplicationResources" null="false" />
+
+  	<!-- Struts MENU 
+  	<plug-in className="net.sf.navigator.menu.MenuPlugIn">
+    	<set-property property="menuConfig" value="/WEB-INF/struts/menu/menu-config.xml" />
+  	</plug-in>
+  	-->
+
+	<!-- Struts validator -->
+ 	<!-- AÃ±adir validaciones propias y reglas propias en otro fichero -->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property
+			property="pathnames"
+			value="/org/apache/struts/validator/validator-rules.xml" />
+	</plug-in>
+	<!-- Spring Plugin >
+	<plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+	    <set-property property="contextConfigLocation" value="/WEB-INF/spring/presentation-struts-context.xml"/>
+	</plug-in-->
+	<!-- Struts Tiles -->
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+    	<set-property property="definitions-config" value="/WEB-INF/struts/tiles/tiles-defs.xml"/>
+    </plug-in>
+
+</struts-config>

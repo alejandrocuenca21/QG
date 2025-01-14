@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:19 a partir de la COPY QGCV9040 -->
+<!--
+   *IC* 18/FEB/2010 11:41:52 LIBPR.COPYS.QG00(QGCV9040)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9040CO" Servicio="QGF0040" Cabecera="NATE" Descripcion="ALTA MODIFICACIONES DE CLIENTES CCMV">
+  <NA_CAMPO Nombre="IN-ACCION" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="TIPO-MOV-ORI" Tipo="2" Longitud="2"/>
+  <NA_GRUPO Nombre="DATOS-CCMV">
+    <NA_CAMPO Nombre="M-CO-CLIENTE-GBL" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="M-DS-NOMBRE" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="M-DS-APELLIDO-1" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="M-DS-APELLIDO-2" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="M-CO-TIPO-DOC-NSCO" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="M-FX-ALTA" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="M-CO-PAIS-NSCO" Tipo="2" Longitud="5"/>
+    <NA_CAMPO Nombre="M-IN-CAB-GRU-EMP" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="M-CO-SIT-ESTADO-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="M-CO-EST-CLI-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="M-IT-ULT-CMB-EST-UNM" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="M-CO-TIPO-CLI-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="M-CO-TIP-CLI-FSC-UNM" Tipo="2" Longitud="3"/>
+    <NA_CAMPO Nombre="M-CO-SEGMENTO-UNM" Tipo="2" Longitud="3"/>
+    <NA_CAMPO Nombre="M-CO-SUBSEGMENTO-UNM" Tipo="2" Longitud="3"/>
+    <NA_CAMPO Nombre="M-CO-TP-SEGMENTO-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="M-CO-MOT-SGM-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="M-IT-CMB-SGM-UNM" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="M-FX-INI-VIGENCIA" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="M-FX-FIN-VIGENCIA" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="M-CO-USUARIO-ALT" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="IT-ALTA" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="M-CO-USUARIO-MOD" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="M-IT-ULT-MOD" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="M-NO-PROG-MOD" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="60"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

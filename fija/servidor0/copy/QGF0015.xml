@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Fri Nov 05 12:08:30 MET 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC126CO" Servicio="QGF0015" Descripcion ="DESCRIPCION DE PROVINCIA" LongDatosTotal ="4208" LongDatosEntrada ="5" LongDatosSalida ="4203" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-PROVINCIA" Longitud = "2" Tipo = "3" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+    <NA_GRUPO Nombre = "PRN-DSC-COD-GR" Occurs = "100" >
+      <NA_CAMPO Nombre = "CO-PROVINCIA" Longitud = "2" Tipo = "3" />
+      <NA_CAMPO Nombre = "DS-PROVINCIA" Longitud = "40" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN" "http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+
+<tiles-definitions>
+
+	<definition name="QGmainLayout" path="/jsp/layout/QGmainLayout.jsp">
+	
+		<put name="title" type="string" value="Cliente Global" />
+	
+		<put name="contenido" type="string" value="" />
+	
+		<putList name="lstScripts" />
+
+		<putList name="lstStyles" />
+		
+	</definition>
+	
+		<definition name="TFmainMenu" path="/jsp/layout/TFmainMenu.jsp">
+	
+		<put name="title" type="string" value="Menu aplicaciones" />
+	
+		<put name="contenido" type="string" value="" />
+	
+		<putList name="lstScripts" />
+
+		<putList name="lstStyles" />
+		
+	</definition>
+	
+	<definition name="ml.index" extends="QGmainLayout">
+		<put name="title" type="string" value="Indice" />
+		<put name="contenido" type="page" value="/jsp/QGinicio.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="js/QGjsLayout.js" />
+			<add value="js/QGinicio.js" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.consentimientosDerechos" extends="QGmainLayout">
+		<put name="title" type="string" value="Consentimientos/Derechos" />
+		<put name="contenido" type="page" value="/jsp/administracion/consentimientos/QGlistadoConsentimientos.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="djs/administracion/consentimientos/QGlistadoConsentimientosDjs.jsp" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.mediosComunicacion" extends="QGmainLayout">
+		<put name="title" type="string" value="Medios de Comunicación" />
+		<put name="contenido" type="page" value="/jsp/administracion/medioscomunicacion/QGlistadoMediosComunicacion.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="djs/administracion/medioscomunicacion/QGlistadoMediosComunicacionDjs.jsp" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.campanias" extends="QGmainLayout">
+		<put name="title" type="string" value="Campañas" />
+		<put name="contenido" type="page" value="/jsp/administracion/campanias/QGlistadoCampanias.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="ext/plugins/rowactions/rowActions.js" />
+			<add value="djs/administracion/campanias/QGlistadoCampaniasDjs.jsp" />
+		</putList>
+		
+		<putList name="lstStyles" >
+			<add value="ext/plugins/rowactions/rowActions.css" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.tiposUbicacion" extends="QGmainLayout">
+		<put name="title" type="string" value="Tipos de Ubicacion" />
+		<put name="contenido" type="page" value="/jsp/administracion/tiposubicacion/QGlistadoTiposUbicacion.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="djs/administracion/tiposubicacion/QGlistadoTiposUbicacionDjs.jsp" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.altaConsentimiento" extends="QGmainLayout">
+		<put name="title" type="string" value="Alta de Consentimiento" />
+		<put name="contenido" type="page" value="/jsp/administracion/consentimientos/QGdetalleAltaConsentimientos.jsp" />
+		
+		<put name="subTitulo" type="string" value="Alta de Derecho/Consentimiento" />
+		
+		<putList name="lstScripts">
+			<add value="ext/plugins/rowactions/rowActions.js" />
+			<add value="js/administracion/consentimientos/QGaltaConsentimientos.js" />
+		</putList>
+		
+		<putList name="lstStyles" >
+			<add value="ext/plugins/rowactions/rowActions.css" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.detalleConsentimiento" extends="QGmainLayout">
+		<put name="title" type="string" value="Detalle de Consentimiento" />
+		<put name="contenido" type="page" value="/jsp/administracion/consentimientos/QGdetalleAltaConsentimientos.jsp" />
+		
+		<put name="subTitulo" type="string" value="Detalle de Derecho" />
+		
+		<putList name="lstScripts">
+			<add value="ext/plugins/rowactions/rowActions.js" />
+			<add value="djs/administracion/consentimientos/QGdetalleConsentimientosDjs.jsp" />
+		</putList>
+		
+		<putList name="lstStyles" >
+			<add value="ext/plugins/rowactions/rowActions.css" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.fichaCliente" extends="QGmainLayout">
+		<put name="title" type="string" value="Ficha de Cliente" />
+		
+		<put name="contenido" type="page" value="/jsp/clientes/fichacliente/QGfichaCliente.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="djs/clientes/fichacliente/QGfichaClienteDjs.jsp" />
+		</putList>
+	</definition>
+	
+<!-- 	<definition name="ml.informesDuplicados" extends="QGmainLayout">
+		<put name="title" type="string" value="Informe de Duplicados" />
+		
+		<put name="contenido" type="page" value="/jsp/informes/QGdocumentoDuplicado.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/informes/QGdocumentoDuplicadoDjs.jsp" />
+		</putList>
+	</definition>
+	
+	<definition name="ml.movimientosTratados" extends="QGmainLayout">
+		<put name="title" type="string" value="Informe de errores" />
+		
+		<put name="contenido" type="page" value="/jsp/informes/QGmovimientosTratados.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/informes/QGmovimientosTratadosDjs.jsp" />
+		</putList>
+	</definition> -->
+	
+	<definition name="ml.buscadorClientes" extends="QGmainLayout">
+		<put name="title" type="string" value="Buscador de Clientes" />
+		
+		<put name="contenido" type="page" value="/jsp/clientes/buscadorclientes/QGbuscadorclientes.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/js/clientes/buscadorclientes/QGbuscadorclientes.js" />
+			<add value="/ext/plugins/rowactions/rowActions.js" />
+		</putList>
+		<putList name="lstStyles" >
+			<add value="ext/plugins/rowactions/rowActions.css" />
+		</putList>
+	</definition>
+	
+	<!-- SEGMENTACION -->
+	<definition name="ml.segmentacion" extends="QGmainLayout">
+		<put name="title" type="string" value="Segmentacion" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/segmentacion/QGsegmentacion.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/segmentacion/evolucion/QGsegmentacionDjs.jsp" />
+			<add value="/djs/administracion/segmentacion/evolucion/QGgestionSegmentacionDjs.jsp" />
+			<add value="/djs/administracion/segmentacion/evolucion/QGsegmentacionHistoricoDjs.jsp"/>
+		</putList>
+	</definition>
+	<!-- FIN SEGMENTACION -->
+	
+		<!-- TRADUCCION -->
+	<definition name="ml.traduccion" extends="QGmainLayout">
+		<put name="title" type="string" value="Traducción Fijo-Móvil" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/segmentacion/traduccion/QGTraduccion.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/segmentacion/traduccion/QGTraduccionDjs.jsp" />
+			<add value="/djs/administracion/segmentacion/traduccion/QGTraduccionHistoricoDjs.jsp" />
+			<add value="/djs/administracion/segmentacion/traduccion/QGGestionTraduccionDjs.jsp" />
+		</putList>
+		
+	</definition>
+	<!-- FIN TRADUCCION -->
+	
+	<!-- PO ENCARTES -->
+	<definition name="ml.encartes" extends="QGmainLayout">
+		<put name="title" type="string" value="P.O. para Encartes" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/encartes/QGPOEncartes.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/encartes/QGPOEncartesDjs.jsp" />
+			<add value="/ext/plugins/rowactions/rowActions.js" />
+		</putList>
+		
+		<putList name="lstStyles" >
+			<add value="ext/plugins/rowactions/rowActions.css" />
+		</putList>
+	</definition>
+
+	
+	
+	<definition name="ml.creatividad" extends="QGmainLayout">
+		<put name="title" type="string" value="Creatividad de encartes" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/creatividad/QGCreatividad.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/creatividad/QGCreatividadDjs.jsp" />
+		</putList>
+	</definition>
+	<!-- FIN encartes -->
+	
+	<!-- MENSAJES DE ERROR -->
+	<definition name="ml.menserror" extends="QGmainLayout">
+		<put name="title" type="string" value="Mensajes de Error" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/menserror/QGMensajeError.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/menserror/QGMensajeErrorDjs.jsp" />
+		</putList>
+				
+	</definition>
+	<!-- FIN menserror -->
+	
+	<!-- AUTORIZACIONES -->
+	<definition name="ml.autorizaciones" extends="QGmainLayout">
+		<put name="title" type="string" value="Autorizaciones" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/autorizaciones/QGAutorizaciones.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="djs/administracion/autorizaciones/QGAutorizacionesDjs.jsp" />
+			<add value="djs/administracion/autorizaciones/QGAutorizPstAutorizDjs.jsp" />
+			<add value="djs/administracion/autorizaciones/QGAutorizPstSisExtDjs.jsp" />
+			<add value="djs/administracion/autorizaciones/QGAutorizPstSrvNADjs.jsp" />
+		</putList>
+				
+	</definition>
+	<!-- FIN AUTORIZACIONES -->
+	
+	<!-- INFORMES CONVIVENCIA -->
+	<definition name="ml.convivencia" extends="QGmainLayout">
+		<put name="title" type="string" value="Informe de convivencia" />
+		
+		<put name="contenido" type="page" value="/jsp/informes/QGconvivencia.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/informes/QGconvivenciaDjs.jsp" />
+		</putList>
+	</definition>
+	<!-- FIN INFORMES CONVIVENCIA -->
+	
+	<!-- INFORMES CONCILIACION -->
+	<definition name="ml.conciliacion" extends="QGmainLayout">
+		<put name="title" type="string" value="Informe de conciliación" />
+		
+		<put name="contenido" type="page" value="/jsp/informes/QGconciliacion.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/informes/QGconciliacionDjs.jsp" />
+		</putList>
+	</definition>
+	<!-- FIN INFORMES CONCILIACION -->
+
+	<!-- PRESEGMENTACION -->
+	<definition name="ml.presegmentacion" extends="QGmainLayout">
+		<put name="title" type="string" value="Presegmentación" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/segmentacion/presegmentacion/QGPresegmentacion.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/segmentacion/presegmentacion/QGPresegmentacionDjs.jsp" />
+			<add value="/djs/administracion/segmentacion/presegmentacion/QGGestionPresegmentacionDjs.jsp" />
+		</putList>
+		
+	</definition>
+	<!-- FIN PRESEGMENTACION -->
+	<!-- REGLAS -->
+	<definition name="ml.reglas" extends="QGmainLayout">
+		<put name="title" type="string" value="Reglas" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/segmentacion/reglas/QGReglas.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/segmentacion/reglas/QGReglasDjs.jsp" />
+<!--		<add value="/djs/administracion/segmentacion/reglas/QGReglasHistoricoDjs.jsp" />-->
+			<add value="/djs/administracion/segmentacion/reglas/QGGestionReglasDjs.jsp" />
+		</putList>
+		
+	</definition>
+	<!-- FIN REGLAS -->
+	<!-- CONTRATOS -->
+	<definition name="ml.contratos" extends="QGmainLayout">
+		<put name="title" type="string" value="Contratos" />
+		
+		<put name="contenido" type="page" value="/jsp/administracion/segmentacion/reglas/contratos/QGContratos.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/djs/administracion/segmentacion/reglas/contratos/QGContratosDjs.jsp" />
+		</putList>
+		
+	</definition>
+	<!-- FIN CONTRATOS -->
+
+</tiles-definitions>

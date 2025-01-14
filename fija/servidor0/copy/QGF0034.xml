@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:18 a partir de la COPY QGCV9001 -->
+<!--
+   *IC* 18/FEB/2010 11:41:45 LIBPR.COPYS.QG00(QGCV9001)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9001CO" Servicio="QGF0034" Cabecera="NATE" Descripcion="ALTA MODIFICACIONES DE DIRECCIONES DICG">
+  <NA_CAMPO Nombre="CV9001-IN-ACCION" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9001-IN-ATRIBUTO" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9001-CO-CLIENTE-GBL" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9001-NU-SEC-DIR" Tipo="3" Longitud="12"/>
+  <NA_CAMPO Nombre="CV9001-IN-UNI-NGC-CLI-GBL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9001-CO-TIPO-DIRE" Tipo="2" Longitud="2"/>
+  <NA_CAMPO Nombre="CV9001-IN-DIR-PPL" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9001-IN-PRIORIDAD-NSCO" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9001-CO-CLIENTE-GBL-C" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9001-CO-USUARIO" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9001-IT-ULT-MOD" Tipo="2" Longitud="26"/>
+  <NA_CAMPO Nombre="CV9001-FILLER" Tipo="2" Longitud="100"/>
+</NA_DESCRIPTOR>

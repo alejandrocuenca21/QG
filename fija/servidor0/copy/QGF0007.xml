@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Thu Feb 11 15:49:33 MET 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGD100CO" Servicio="QGF0007" Descripcion ="RELACION DE CAMPA&#209;AS DE CONSENTIMIENTOS/DERECHOS" LongDatosTotal ="3753" LongDatosEntrada ="1" LongDatosSalida ="3752" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACS-INF-COX" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DRH-CSM-CPN-VAL-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-CPN-CMC-CSM-DRH" Longitud = "15" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CPN-CMC-CSM-DRH" Longitud = "60" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:20 a partir de la COPY QGCV9408 -->
+<!--
+   *IC* 18/FEB/2010 11:41:59 LIBPR.COPYS.QG00(QGCV9408)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9408CO" Servicio="QGF0045" Cabecera="NATE" Descripcion="TRATA LOS MOVIMIENTOS DE CAMBIO DE DOCUMENTO LNM">
+  <NA_GRUPO Nombre="CV9408-MOVIMIENTOS-CLGL">
+    <NA_CAMPO Nombre="CV9408-CO-TIPO-MOV-CLGL" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CV9408-IT-ULT-MOD-CLGL" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="CV9408-CO-CLIE-SIST-ORI-CLGL" Tipo="2" Longitud="11"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="CV9408-DATOS-CLGL">
+    <NA_CAMPO Nombre="CV9408-CO-CLIENTE-GBL-A" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CV9408-DCLQGCGBLMD-E" Tipo="2" Longitud="900"/>
+    <NA_CAMPO Nombre="CV9408-CO-TIPO-DOCUMENTO-N" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CV9408-NU-DOCUMENTO-N" Tipo="2" Longitud="17"/>
+    <NA_CAMPO Nombre="CV9408-DS-CLV-DAT-CLI-CLGL-N" Tipo="2" Longitud="100"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="CV9408-LNM">
+    <NA_CAMPO Nombre="CV9408-DS-NOMBRE" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CV9408-DS-APELLIDO-1" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CV9408-DS-APELLIDO-2" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CV9408-CO-USUARIO-MOD" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CV9408-IT-ULT-MOD" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="CV9408-FILLER-CLGL" Tipo="2" Longitud="100"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="CV9408-DS-SAL-TAB-AUX">
+    <NA_CAMPO Nombre="CV9408-IN-ESTADO-MOV-ERCL" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CV9408-IN-ESTADO-MOV-CVCL" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CV9408-CO-ERROR" Tipo="2" Longitud="6"/>
+    <NA_CAMPO Nombre="CV9408-FILLER" Tipo="2" Longitud="100"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

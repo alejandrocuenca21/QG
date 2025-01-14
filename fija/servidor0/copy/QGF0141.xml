@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Fri Nov 18 08:29:46 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGP300CO" Servicio = "QGF0141" Descripcion = "CONSULTA Y ADMINISTRACION DE PARAMETROS" LongDatosTotal = "338" LongDatosEntrada = "139" LongDatosSalida = "199" HashDNA = "11302af4e9dc5cfc88e355a6dd92b8e2" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TIPO-VALOR" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TP-PARAM-GBL" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-PARAMETRO-GBL" Longitud = "20" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-VALOR-ALFA" Longitud = "100" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-VALOR-PARAM" Longitud = "14" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "CO-TP-PARAM-GBL" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-PARAMETRO-GBL" Longitud = "20" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-PARAMETRO-GBL" Longitud = "20" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-VALOR-ALFA" Longitud = "100" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-VALOR-PARAM" Longitud = "14" Tipo = "3" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

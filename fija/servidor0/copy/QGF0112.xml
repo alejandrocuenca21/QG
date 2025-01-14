@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Feb 14 10:23:58 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGRH00CO" Servicio="QGF0112" Descripcion ="ACTUALIZACION DE OBSERVACIONES DE INDICADOR DE SATISFACCION" LongDatosTotal ="158" LongDatosEntrada ="158" LongDatosSalida ="0" HashDNA ="67545c73d7fa05d7c9f5ee95f4f6492e" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "OB-CLI-GBL" Longitud = "150" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

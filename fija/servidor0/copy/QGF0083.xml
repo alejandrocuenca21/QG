@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 10:52:55 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC226CO" Servicio="QGF0083" Descripcion ="CONSULTA SEGMENTOS ASOCIADOS C/D" LongDatosTotal ="725" LongDatosEntrada ="3" LongDatosSalida ="722" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "SEG-ASO-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DRH-DSC-SGM-ASN-GR" Occurs = "30" >
+      <NA_CAMPO Nombre = "IN-DRH-ASO-SGM" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SGM-UNF-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SGM-UNF-UNM" Longitud = "20" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

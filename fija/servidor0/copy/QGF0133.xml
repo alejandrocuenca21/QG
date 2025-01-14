@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Wed Sep 14 17:58:08 MEST 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGCF00CO" Servicio="QGF0133" Descripcion ="INFORMES WEB CONVIVENCIA CONCILIACION Y REINYECCION" LongDatosTotal ="30547" LongDatosEntrada ="10" LongDatosSalida ="30537" HashDNA ="382c429e1c69ff563410dfc501828637" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-TIPO-INFORME" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INFORME" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "IND-PGN-IN" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "1" Tipo = "3" />
+    <NA_GRUPO Nombre = "INF-FEC-GR" Occurs = "7" >
+      <NA_CAMPO Nombre = "FX-INFORME" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "DGN-OCU-NU" Longitud = "2" Tipo = "3" />
+      <NA_GRUPO Nombre = "DGN-DSC-GR" Occurs = "75" >
+        <NA_CAMPO Nombre = "DS-DGN" Longitud = "8" Tipo = "2" />
+      </NA_GRUPO>
+      <NA_CAMPO Nombre = "ERR-OCU-NU" Longitud = "2" Tipo = "3" />
+      <NA_GRUPO Nombre = "ERR-DSC-GR" Occurs = "75" >
+        <NA_CAMPO Nombre = "DS-ERROR-VALOR" Longitud = "50" Tipo = "2" />
+      </NA_GRUPO>
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

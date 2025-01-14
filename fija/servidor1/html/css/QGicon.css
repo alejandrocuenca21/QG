@@ -1,0 +1,10 @@
+.iconoEliminar{background: url(../images/iconos/QGicoEliminarRow.gif) no-repeat;}
+.iconoObservaciones{
+	background-image:url(../images/iconos/QGicoObservaciones.gif);
+	background-repeat:no-repeat;
+}
+.centrarIco{width: 100% !important; background-position: 50% 0; margin: 0 !important;}
+.iconoHistorico{
+	background-image:url(../images/iconos/QGicoHistorico.gif);
+	background-repeat:no-repeat;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Fri Nov 18 08:25:25 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGP600CO" Servicio = "QGF0144" Descripcion = "CONSULTA POR REGLAS ESPECIFICAS DESDE WEB" LongDatosTotal = "6639" LongDatosEntrada = "17" LongDatosSalida = "6622" HashDNA = "ac69b1fac0c82fc408461e8ceed5b909" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "IN-TIP-CST-PSG" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-REGLA-SGM" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "CA-LINEAS-UNF" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-LINEAS-UNM" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-LINEAS-TOTAL" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-DIAS-PTE-SGM" Longitud = "3" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "SGM-RGL-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "CO-REGLA-SGM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-REGLA-SGM" Longitud = "60" Tipo = "2" />
+      <NA_CAMPO Nombre = "CA-LINEAS-UNF" Longitud = "3" Tipo = "3" />
+      <NA_CAMPO Nombre = "CA-LINEAS-UNM" Longitud = "3" Tipo = "3" />
+      <NA_CAMPO Nombre = "CA-LINEAS-TOTAL" Longitud = "3" Tipo = "3" />
+      <NA_CAMPO Nombre = "CA-DIAS-PTE-SGM" Longitud = "3" Tipo = "3" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "SGM-OCU-NU" Longitud = "1" Tipo = "3" />
+      <NA_GRUPO Nombre = "SGM-ASO-GR" Occurs = "4" >
+        <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-SEGMENTO-DST" Longitud = "2" Tipo = "2" />
+        <NA_CAMPO Nombre = "DS-SEGMENTO-UNM" Longitud = "40" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-SUBSEGMENTO-DST" Longitud = "2" Tipo = "2" />
+        <NA_CAMPO Nombre = "DS-SUBSEGMENTO-UNM" Longitud = "40" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-OFICINA-AT" Longitud = "5" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-NEMO-TANDEM" Longitud = "7" Tipo = "2" />
+        <NA_CAMPO Nombre = "CO-USUARIO-MOD-RGL" Longitud = "8" Tipo = "2" />
+        <NA_CAMPO Nombre = "IT-ULT-MOD-RGL" Longitud = "26" Tipo = "2" />
+      </NA_GRUPO>
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

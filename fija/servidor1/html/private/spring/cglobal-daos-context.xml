@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+  
+  	<bean id="dao.consentimientosClientes" class="com.telefonica.ssnn.qg.buscador.consentimientos.dao.impl.QGConsentimientosClientesDaoNA" />
+  	
+    <bean id="dao.buscadorClientes" class="com.telefonica.ssnn.qg.buscador.clientes.dao.impl.QGBuscadorClientesDaoNA" />
+    
+    <!-- DAO para la auditoria -->
+    <bean id="dao.auditor" class="com.telefonica.ssnn.qg.auditoria.dao.impl.QGAuditorDaoNA" />
+    
+    <bean id="dao.informesConvivencia" class="com.telefonica.ssnn.qg.informes.dao.impl.QGInformesConvivenciaDaoNA" />
+    
+    <bean id="dao.campanias" class="com.telefonica.ssnn.qg.administracion.campanias.dao.impl.QGCampaniasDaoNA" />
+    
+    <bean id="dao.consentimientos" class="com.telefonica.ssnn.qg.administracion.consentimientos.dao.impl.QGConsentimientosDaoNA" />
+    
+    <bean id="dao.medios" class="com.telefonica.ssnn.qg.administracion.medios.dao.impl.QGMediosDaoNA" />
+    
+    <bean id="dao.ubicacion" class="com.telefonica.ssnn.qg.administracion.ubicacion.dao.impl.QGUbicacionDaoNA" />
+       
+
+  <!--   <bean id="dao.usuariosLdap" class="com.telefonica.ssnn.qg.seguridad.dao.impl.QGUsuariosDAOLdap">
+    	<property name="ldapTemplate" ref="ldapTemplate" />
+    </bean>-->
+
+ 	<bean id="dao.usuariosLdap" class="com.telefonica.ssnn.qg.seguridad.dao.impl.QGUsuariosDAOLdap"/>
+ 	 
+	  <!-- DAO GENERICO PARA SEGMENTOS Y SUBSEGMENTOS -->
+    <bean id="dao.segmentos" class="com.telefonica.ssnn.qg.comun.dao.impl.QGSegmentosDaoNA"/>
+	 <!-- SEGMENTACION -->
+    <bean id="dao.segmentacion" class="com.telefonica.ssnn.qg.administracion.segmentacion.dao.impl.QGSegmentacionesDaoNA"/>
+	<!-- SEGMENTACION TRADUCCION -->
+    <bean id="dao.segmentacionTraduccion" class="com.telefonica.ssnn.qg.administracion.segmentacion.dao.impl.QGSegmentacionesTraduccionDaoNA"/>
+	
+    <!-- ENCARTES -->
+    <bean id="dao.creatividad" class="com.telefonica.ssnn.qg.administracion.creatividad.dao.impl.QGCreatividadDaoNA"/>
+	 
+    <bean id="dao.encartes" class="com.telefonica.ssnn.qg.administracion.encartes.dao.impl.QGEncartesDaoNA"/>
+    
+	 <bean id="dao.derechos" class="com.telefonica.ssnn.qg.comun.dao.impl.QGDerechosDaoNA"/>
+	 <!-- FIN ENCARTES -->
+	 
+	 <!-- MENSAJES DE ERROR -->
+    <bean id="dao.menserror" class="com.telefonica.ssnn.qg.administracion.menserror.dao.impl.QGMensajeErrorDaoNA"/>
+	 
+	 <!-- AUTORIZACIONES - AUTORIZACIONES -->
+    <bean id="dao.autorizaciones" class="com.telefonica.ssnn.qg.administracion.autorizaciones.dao.impl.QGAutorizacionesDaoNA"/>
+    <!-- AUTORIZACIONES - SISTEMAS EXTERNOS -->
+    <bean id="dao.sistemasExternos" class="com.telefonica.ssnn.qg.administracion.autorizaciones.dao.impl.QGSistemasExternosDaoNA"/>
+   	<!-- AUTORIZACIONES - SERVICIOS NA-->
+    <bean id="dao.serviciosNA" class="com.telefonica.ssnn.qg.administracion.autorizaciones.dao.impl.QGServiciosNADaoNA"/>
+    
+    <!-- INFORMES CONVIVENCIA EXCEL-->
+    <bean id="dao.informeExcelConvivencia" class="com.telefonica.ssnn.qg.informeExcel.dao.impl.QGInformeExcelConvivenciaDaoNA" />
+    
+    
+    <!-- SEGMENTACION PRESEGMENTACION -->
+    <bean id="dao.segmentacionPreseg" class="com.telefonica.ssnn.qg.administracion.segmentacion.dao.impl.QGSegmentacionesPresegDaoNA"/>
+	
+    <!-- SEGMENTACION REGLAS -->
+    <bean id="dao.segmentacionReglas" class="com.telefonica.ssnn.qg.administracion.segmentacion.dao.impl.QGSegmentacionesReglasDaoNA"/>
+	
+    <!-- SEGMENTACION REGLAS CONTRATOS-->
+    <bean id="dao.segmentacionContratos" class="com.telefonica.ssnn.qg.administracion.segmentacion.dao.impl.QGSegmenRegContratosDaoNA"/>
+	
+	 
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:18 a partir de la COPY QGCV9003 -->
+<!--
+   *IC* 18/FEB/2010 11:41:47 LIBPR.COPYS.QG00(QGCV9003)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9003CO" Servicio="QGF0036" Cabecera="NATE" Descripcion="ALTA MODIFICACIONES DE DIRECCIONES USCG">
+  <NA_CAMPO Nombre="CV9003-IN-ACCION" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9003-CO-CLIENTE-GBL" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9003-NU-SEC-DIR" Tipo="3" Longitud="12"/>
+  <NA_CAMPO Nombre="CV9003-CO-TIPO-USO-DIR" Tipo="2" Longitud="2"/>
+  <NA_CAMPO Nombre="CV9003-IN-DIR-ENV-NSCO" Tipo="2" Longitud="1"/>
+  <NA_CAMPO Nombre="CV9003-CO-CLIENTE-GBL-C" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9003-CO-USUARIO" Tipo="2" Longitud="8"/>
+  <NA_CAMPO Nombre="CV9003-IT-ULT-MOD" Tipo="2" Longitud="26"/>
+  <NA_CAMPO Nombre="CV9003-FILLER" Tipo="2" Longitud="100"/>
+</NA_DESCRIPTOR>

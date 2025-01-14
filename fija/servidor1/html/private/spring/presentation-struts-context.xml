@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<!-- 
+Contexto de Spring para las Actions de Struts.
+-->
+
+<beans>
+    
+    <bean name="/DetalleConsentimiento" class="com.telefonica.ssnn.qg.buscador.consentimientos.struts.actions.QGDetalleConsentimientoAction" >
+		<property name="consentimientosServicio" ref="servicio.ConsentimientosCliente" />
+		<property name="consentimientosServicioAdmin" ref="servicio.Consentimientos" />
+		<property name="campaniasServicio" ref="servicio.Campanias" />
+		<property name="mediosServicio" ref="servicio.Medios" />
+		<property name="ubicacionServicio" ref="servicio.Ubicacion" />
+	</bean>
+	
+	<bean name="/DatosGenerales" class="com.telefonica.ssnn.qg.buscador.clientes.struts.actions.QGDatosGeneralesAction" >
+		<property name="buscadorClientesServicio" ref="servicio.BuscadorClientes" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/ActualizacionConsentimiento" class="com.telefonica.ssnn.qg.buscador.consentimientos.struts.actions.QGActualizacionConsentimientoAction" >
+		<property name="consentimientosServicio" ref="servicio.ConsentimientosCliente" />
+	</bean>
+	
+	<bean name="/DomiciliosCliente" class="com.telefonica.ssnn.qg.buscador.clientes.struts.actions.QGDomiciliosClienteAction" >
+		<property name="buscadorClientesServicio" ref="servicio.BuscadorClientes" />
+	</bean>
+	
+	<bean name="/HistorialConsentimientos" class="com.telefonica.ssnn.qg.buscador.consentimientos.struts.actions.QGHistorialConsentimientosAction" >
+		<property name="consentimientosClientesServicio" ref="servicio.ConsentimientosCliente" />
+	</bean>
+	
+	<bean name="/ConsentimientosCliente" class="com.telefonica.ssnn.qg.buscador.consentimientos.struts.actions.QGConsentimientosClienteAction" >
+		<property name="consentimientosServicio" ref="servicio.ConsentimientosCliente" />
+		<property name="servicio" ref="servicio.Consentimientos" />
+	</bean>
+	
+	<bean name="/ListaClientes" class="com.telefonica.ssnn.qg.buscador.clientes.struts.actions.QGListaClientesAction" >
+		<property name="buscadorClientesServicio" ref="servicio.BuscadorClientes" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/DetalleConsentimientosDerechos" class="com.telefonica.ssnn.qg.administracion.consentimientos.struts.actions.QGDetalleAltaConsentimientosAction" >
+		<property name="consentimientosServicio" ref="servicio.Consentimientos" />
+		<property name="mediosServicio" ref="servicio.Medios" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<!-- <bean name="/BuscadorClientes" class="com.telefonica.ssnn.qg.buscador.clientes.struts.actions.BuscadorClientesAction" >
+		<property name="buscadorClientesServicio" ref="servicio.BuscadorClientes" />
+	</bean>-->
+	
+	 <bean name="/DocumentoDuplicado" class="com.telefonica.ssnn.qg.informes.struts.actions.QGDocumentoDuplicadoAction" >
+		<property name="informesConvivenciaServicio" ref="servicio.InformesConvivencia" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+	</bean>
+	
+	 <bean name="/MovimientosTratados" class="com.telefonica.ssnn.qg.informes.struts.actions.QGMovimientosTratadosAction" >
+		<property name="informesConvivenciaServicio" ref="servicio.InformesConvivencia" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+	</bean>
+	
+	 <bean name="/ConsentimientosDerechos" class="com.telefonica.ssnn.qg.administracion.consentimientos.struts.actions.QGListaConsentimientosAction" >
+		<property name="consentimientosServicio" ref="servicio.Consentimientos" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+	</bean>
+	
+	 <bean name="/MediosComunicacion" class="com.telefonica.ssnn.qg.administracion.medios.struts.actions.QGMediosComunicacionAction" >
+		<property name="mediosServicio" ref="servicio.Medios" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/TiposUbicacion" class="com.telefonica.ssnn.qg.administracion.ubicacion.struts.actions.QGTiposUbicacionAction" >
+		<property name="ubicacionServicio" ref="servicio.Ubicacion" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Segmentaciones" class="com.telefonica.ssnn.qg.administracion.segmentacion.struts.actions.QGSegmentacionesAction" >
+		<property name="segmentacionesServicio" ref="servicio.Segmentacion" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Campanias" class="com.telefonica.ssnn.qg.administracion.campanias.struts.actions.QGListaCampaniasAction" >
+		<property name="campaniasServicio" ref="servicio.Campanias" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Traduccion" class="com.telefonica.ssnn.qg.administracion.segmentacion.struts.actions.QGSegmentacionesTraduccionAction" >
+		<property name="segmentacionesServicio" ref="servicio.SegmentacionTraduccion" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+
+	<bean name="/POEncartes" class="com.telefonica.ssnn.qg.administracion.encartes.struts.actions.QGEncartesAction" >
+		<property name="encartesServicio" ref="servicio.Encartes" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Creatividad" class="com.telefonica.ssnn.qg.administracion.creatividad.struts.actions.QGCreatividadAction" >
+		<property name="creatividadServicio" ref="servicio.Creatividad" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+
+	<bean name="/MensError" class="com.telefonica.ssnn.qg.administracion.menserror.struts.actions.QGMensajeErrorAction" >
+		<property name="menserrorServicio" ref="servicio.MensError" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Autorizaciones" class="com.telefonica.ssnn.qg.administracion.autorizaciones.struts.actions.QGAutorizacionesAction" >
+		<property name="autorizacionesServicio" ref="servicio.Autorizaciones" />
+		<property name="sistemasExternosServicio" ref="servicio.SistemasExternos" />
+		<property name="serviciosNAServicio" ref="servicio.ServiciosNA" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/SistemasExternos" class="com.telefonica.ssnn.qg.administracion.autorizaciones.struts.actions.QGSistemasExternosAction" >
+		<property name="sistemasExternosServicio" ref="servicio.SistemasExternos" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/ServiciosNA" class="com.telefonica.ssnn.qg.administracion.autorizaciones.struts.actions.QGServiciosNAAction" >
+		<property name="serviciosNAServicio" ref="servicio.ServiciosNA" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	 
+	<bean name="/Convivencia" class="com.telefonica.ssnn.qg.informeExcel.struts.actions.QGInformeExcelConvivenciaAction" >
+		<property name="informesExcelServicio" ref="servicio.InformeExcel" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+	</bean>
+	
+	<bean name="/Conciliacion" class="com.telefonica.ssnn.qg.informeExcel.struts.actions.QGInformeExcelConciliacionAction" >
+		<property name="informesExcelServicio" ref="servicio.InformeExcel" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+	</bean>
+	
+	<bean name="/Presegmentacion" class="com.telefonica.ssnn.qg.administracion.segmentacion.struts.actions.QGSegmentacionesPresegAction" >
+		<property name="segmentacionesServicio" ref="servicio.SegmentacionPreseg" />
+		<property name="segmentacionesSer" ref="servicio.Segmentacion" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Reglas" class="com.telefonica.ssnn.qg.administracion.segmentacion.struts.actions.QGSegmentacionesReglasAction" >
+		<property name="segmentacionesServicio" ref="servicio.SegmentacionReglas" />
+		<property name="segmentacionesSer" ref="servicio.Segmentacion" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+		<property name="auditorServicio" ref="servicio.Auditor" />
+	</bean>
+	
+	<bean name="/Contratos" class="com.telefonica.ssnn.qg.administracion.segmentacion.struts.actions.QGSegmenRegContratosAction" >
+		<property name="segmentacionesServicio" ref="servicio.SegmentacionContratos" />
+		<property name="segmentacionesSer" ref="servicio.Segmentacion" />
+		<property name="generarInformeServicio" ref="servicio.GenerarInforme" />
+	</bean>
+	
+	
+	 <bean name="/eligeAcceso" class="com.telefonica.ssnn.qg.seguridad.struts.actions.QGElegirAccesoAction" >	
+	
+	</bean>
+	
+</beans>

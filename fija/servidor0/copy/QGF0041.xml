@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:19 a partir de la COPY QGCV9060 -->
+<!--
+   *IC* 18/FEB/2010 11:41:54 LIBPR.COPYS.QG00(QGCV9060)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9060CO" Servicio="QGF0041" Cabecera="NATE" Descripcion="VALIDA EL TIPO Y NUMERO DE DOCUMENTO">
+  <NA_GRUPO Acceso="E" Nombre="CV9060-E-REGISTRO">
+    <NA_CAMPO Nombre="CV9060-E-TIPO-DOC" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CV9060-E-NU-DOCUM" Tipo="2" Longitud="17"/>
+  </NA_GRUPO>
+  <NA_GRUPO Acceso="S" Nombre="CV9060-S-REGISTRO">
+    <NA_CAMPO Nombre="CV9060-S-VALIDA-DOC" Tipo="2" Longitud="1"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

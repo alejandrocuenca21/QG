@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:24:08 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC135CO" Servicio="QGF0025" Descripcion ="DESCRIPCION DE LOS CODIGOS DE DIRECCION (LNM)" LongDatosTotal ="161" LongDatosEntrada ="21" LongDatosSalida ="140" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-PROV-UNM" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-ENT-POBLAC-UNM" Longitud = "5" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CALLE-UNM" Longitud = "6" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "DS-CALLE-UNM" Longitud = "30" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-POSTAL-UNM" Longitud = "5" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-CALLE-UNM" Longitud = "5" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIP-VIA-UNM" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-TIP-VIA-UNM" Longitud = "5" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-ENT-POBLAC-UNM" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-MUNICIPIO-UNM" Longitud = "40" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-POB-INE" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-BAJA" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

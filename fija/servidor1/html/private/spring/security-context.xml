@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+
+	<bean id="authenticationManager" class="org.springframework.security.providers.ProviderManager">
+        <property name="providers">
+            <list>
+                <ref bean="authenticationProvider" />
+                <ref bean="anonymousProvider" />
+            </list>
+        </property>
+    </bean>
+    
+    
+    
+    <bean id="accessDecisionManager"
+		class="org.springframework.security.vote.AffirmativeBased">
+		<property name="allowIfAllAbstainDecisions"
+			value="false" />
+		<property name="decisionVoters">
+			<list>
+				<bean class="org.springframework.security.vote.RoleVoter" />
+				<bean class="org.springframework.security.vote.AuthenticatedVoter" />
+			</list>
+		</property>
+	</bean>
+    
+<!--     <bean id="authenticationProvider" -->
+<!-- 		class="org.springframework.security.providers.dao.DaoAuthenticationProvider"> -->
+<!-- 		<property name="passwordEncoder"> -->
+<!-- 			<bean class="org.springframework.security.providers.ldap.authenticator.LdapShaPasswordEncoder" /> -->
+<!-- 		</property> -->
+<!-- 		<property name="userDetailsService" ref="userService" /> -->
+<!-- 	</bean> -->
+    
+    <bean id="authenticationProvider" class="org.springframework.security.providers.dao.DaoAuthenticationProvider">
+        <property name="userDetailsService" ref="userService" />
+    </bean>
+
+    <bean id="anonymousProvider" class="org.springframework.security.providers.anonymous.AnonymousAuthenticationProvider">
+        <property name="key" value="OdInKeY" />
+    </bean>
+    
+<!--     <bean id="ldapEntryPoint" class="com.telefonica.ssnn.qg.seguridad.QGLdapAuthenticationEntryPoint"> -->
+<!-- 	</bean> -->
+	
+	
+	<bean id="basicEntryPoint" class="org.springframework.security.ui.basicauth.BasicProcessingFilterEntryPoint">
+	<property name="realmName" value="Cliente Global" />
+	</bean>
+	<bean id="userService" class="com.telefonica.ssnn.qg.seguridad.servicio.impl.QGLdapUserDetailsService">
+		<property name="usuariosDAO" ref="dao.usuariosLdap" />
+	</bean>
+
+	<bean id="springSecurityFilterChain" class="org.springframework.security.util.FilterChainProxy">
+		<property name="matcher">
+			<bean class="org.springframework.security.util.AntUrlPathMatcher" />
+		</property>
+		<property name="filterChainMap">
+			<map>
+				<entry key="/images/**">
+					<list />
+				</entry>
+				<entry key="/ext/**" >
+					<list />
+				</entry>
+				<entry key="/jscalendar/**" >
+					<list />
+				</entry>
+				<entry key="/js/**" >
+					<list />
+				</entry>
+				<entry key="/css/**" >
+					<list />
+				</entry>
+				
+				<entry key="/**">
+					<list>
+						<ref local="httpSessionContextIntegrationFilter"/>
+						<ref local="logoutFilter"/>
+						<ref local="basicFilter" />
+						<ref local="authenticationProcessingFilter"/>
+						<ref local="securityContextHolderAwareRequestFilter"/>
+						<ref local="anonymousProcessingFilter"/>
+						<ref local="exceptionTranslator"/>
+						<ref local="filterSecurityInterceptor"/>
+					</list>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	
+	
+	<!-- Filtros -->
+	<bean id="httpSessionContextIntegrationFilter" class="org.springframework.security.context.HttpSessionContextIntegrationFilter">
+	</bean>
+	
+	<bean id="logoutFilter" class="org.springframework.security.ui.logout.LogoutFilter">
+	    <constructor-arg value="https://edomus.tesa/em/Contenido/usuarios/principal/em_general_multi" />
+	    <constructor-arg>
+	        <list><bean class="org.springframework.security.ui.logout.SecurityContextLogoutHandler" /></list>
+	    </constructor-arg>
+	</bean>
+	
+	<bean id="authenticationProcessingFilter" class="org.springframework.security.ui.webapp.AuthenticationProcessingFilter">
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="authenticationFailureUrl" value="/jsp/QGprohibido.jsp" />
+		<property name="defaultTargetUrl" value="/QGindex.jsp" />
+		<property name="filterProcessesUrl" value="/login" />
+		<property name="alwaysUseDefaultTargetUrl" value="true" />
+		<property name="continueChainBeforeSuccessfulAuthentication" value="false" />
+	</bean>
+	
+	
+	<bean id="securityContextHolderAwareRequestFilter" class="org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter"/>
+	
+	<bean id="anonymousProcessingFilter" class="org.springframework.security.providers.anonymous.AnonymousProcessingFilter">
+		<property name="key" value="OdInKeY" />
+	    <property name="userAttribute" value="anonymousUser,ROLE_ANONYMOUS" />
+    </bean>	
+	
+	<bean id="exceptionTranslator" class="org.springframework.security.ui.ExceptionTranslationFilter">
+	    <property name="authenticationEntryPoint" ref="basicEntryPoint" />
+	    <property name="accessDeniedHandler">
+	    	<bean class="org.springframework.security.ui.AccessDeniedHandlerImpl">
+	    		<property name="errorPage" value="/jsp/QGprohibido.jsp" />
+	    	</bean>
+	    </property>
+	</bean>
+	
+	<bean id="basicFilter"
+		class="com.telefonica.ssnn.qg.seguridad.CustomBasicProcessingFilter">
+		<property name="authenticationManager"
+			ref="authenticationManager" />
+		<property name="authenticationEntryPoint" ref="basicEntryPoint" />
+	</bean>
+	
+	<bean id="filterSecurityInterceptor" class="org.springframework.security.intercept.web.FilterSecurityInterceptor">
+		<property name="objectDefinitionSource">
+			<value>
+				CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISION
+                PATTERN_TYPE_APACHE_ANT
+				/login=IS_AUTHENTICATED_ANONYMOUSLY
+				/jsp/QGprohibido.jsp=IS_AUTHENTICATED_ANONYMOUSLY
+				/QGlogin.jsp=IS_AUTHENTICATED_ANONYMOUSLY
+				
+				/**=IS_AUTHENTICATED_FULLY
+			</value>
+		</property>
+	    <property name="authenticationManager" ref="authenticationManager" />
+	    <property name="accessDecisionManager" ref="accessDecisionManager" />
+	</bean>
+
+</beans>

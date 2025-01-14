@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Apr 09 15:06:29 MEST 2012 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGC125CO" Servicio = "QGF0014" Descripcion = "DESCRIPCION DEL TIPO DE DOCUMENTO" LongDatosTotal = "1106" LongDatosEntrada = "4" LongDatosSalida = "1102" HashDNA = "1f7397ee56a04024eeeedcdf7383047c" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-MODALIDAD-UNM" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DOC-TIP-DSC-GR" Occurs = "25" >
+      <NA_CAMPO Nombre = "CO-LIN-NGC" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-MODALIDAD-UNM" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-DOCUMENTO" Longitud = "40" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Tue Apr 27 11:07:08 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC228CO" Servicio="QGF0084" Descripcion ="ACTUALIZACION DE SEGMENTOS ASOCIADOS A UN C/D" LongDatosTotal ="150" LongDatosEntrada ="150" LongDatosSalida ="0" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "SEG-ASO-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DRH-SGM-ASN-GR" Occurs = "30" >
+      <NA_CAMPO Nombre = "IN-DRH-ASO-SGM" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SGM-UNF-UNM" Longitud = "3" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-USUARIO" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

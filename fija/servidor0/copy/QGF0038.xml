@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:19 a partir de la COPY QGCV9030 -->
+<!--
+   *IC* 18/FEB/2010 11:41:51 LIBPR.COPYS.QG00(QGCV9030)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG9030CO" Servicio="QGF0038" Cabecera="NATE" Descripcion="ALTA MODIFICACIONES DE CLIENTES CGBL ICGB">
+  <NA_GRUPO Acceso="E" Nombre="CV9030-E-REGISTRO">
+    <NA_CAMPO Nombre="CV9030-E-IN-ACCION" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CV9030-E-CO-CLIENTE-TW" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CV9030-E-CO-CLIENTE-NSCO" Tipo="2" Longitud="11"/>
+    <NA_CAMPO Nombre="CV9030-E-DCLQGCGBLMD-E" Tipo="2" Longitud="900"/>
+    <NA_CAMPO Nombre="CV9030-E-DCLQGCGBLMD-H" Tipo="2" Longitud="900"/>
+    <NA_CAMPO Nombre="CV9030-CO-USUARIO-MOD" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CV9030-IT-ULT-MOD" Tipo="2" Longitud="26"/>
+    <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="66"/>
+  </NA_GRUPO>
+  <NA_GRUPO Acceso="S" Nombre="CV9030-S-REGISTRO">
+    <NA_CAMPO Nombre="CV9030-S-CO-CLIENTE-GBL-S" Tipo="2" Longitud="8"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

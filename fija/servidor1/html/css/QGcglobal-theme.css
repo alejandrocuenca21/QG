@@ -1,0 +1,107 @@
+/*--------------------------------------------------|
+|		ESTILOS PARA LAS VENTANAS DE MENSAJES		|
+|--------------------------------------------------*/
+.x-window-mc{background-color: #E4E4EB !important;}
+span.x-window-header-text{
+	padding-left: 30px;
+	background-image:url(../images/iconos/QGicoMsgHead.gif);
+	background-position:0 50%;
+	background-repeat:no-repeat;
+}
+
+.x-window-tl, .x-window-bl  {background-image:url("../images/ext/msgBox/left-corners.png");}
+
+.x-window-tr, .x-window-br  {background-image:url("../images/ext/msgBox/right-corners.png");}
+
+.x-window-tc, .x-window-bc  {background-image:url("../images/ext/msgBox/top-bottom.png");}
+
+.x-tool {background-image:url("../images/ext/panel/tool-sprites.gif");}
+
+.x-window-ml, .x-window-mr {background-image:url("../images/ext/msgBox/left-right.png");}
+
+.x-window-mc .ext-mb-content span{font-weight: bold;}
+.x-window-mc .ext-mb-content .oblig{
+	background:url("../images/QGFCConsSepHead.gif") no-repeat center left;
+	margin-left: 20px;
+	padding-left:10px;
+	display: block;
+}
+
+
+/*--------------------------------------------------|
+|		Estilos para los Grid                		|
+|--------------------------------------------------*/
+.x-grid3-row-selected{
+	background-color:#E7F0B2 !important;
+	border-color: #006600 !important;	
+}
+
+
+.x-grid3-header{
+	background-image:url(../images/QGgridHead.gif);
+	background-position:left top;
+	background-repeat:repeat-x;
+}
+
+td.x-grid3-hd-over .x-grid3-hd-inner,
+td.sort-desc .x-grid3-hd-inner, 
+td.sort-asc .x-grid3-hd-inner, 
+td.x-grid3-hd-menu-open .x-grid3-hd-inner {
+	background-image:url(../images/QGgridHead.gif);
+	background-position:left top;
+	background-repeat:repeat-x;
+}
+
+.x-grid3-hd-inner {padding:3px 3px 3px 5px; color:#65679E !important;}
+.x-grid3-row-alt {background-color:#EFEFF5;}
+.x-panel-body {border:1px solid #FFF;}
+.x-grid3-cell-inner, 
+.x-grid3-hd-inner{color:#00086E;}
+
+/*Quitar borde punteado al pulsar en una celda*/
+.x-grid3 table tr td{outline: 0;}
+
+/* Fixes for grid borders */
+
+/* [div].x-grid3-row */
+.x-grid3-row {border-left:1px solid #ededed;border-right:1px solid #ededed;border-top: none;border-bottom: none;}
+
+/* [div].x-grid3-row-over */
+.x-grid3-row-over {border-left:1px solid #dddddd;border-right:1px solid #dddddd;border-top:none;border-bottom:none;background: #efefef url(../images/ext/grid/row-over.gif) repeat-x left top;
+}
+
+/* [div].x-grid3-row-selected  */
+.x-grid3-row-selected {border-left:1px dotted #a3bae9;border-right:1px dotted #a3bae9;border-top:none;border-bottom:none;background: #DFE8F6;}
+.x-grid3-row td {border-top:none;border-bottom:1px solid #dddddd;background:transparent url(../images/ext/grid/grid3-special-col-bg2.gif) repeat-y right;}
+.x-grid3-row td div.x-grid3-cell-inner {border-top:1px solid #fff;}
+.x-grid3-row-over td {border-bottom:1px solid #dddddd;}
+.x-grid3-row-over td div.x-grid3-cell-inner {border-top:1px solid #dddddd;}
+.x-grid3-row-selected td {border-bottom:1px dotted #a3bae9;border-left: none;border-right: none;background:transparent url(../images/ext/grid/grid3-special-col-sel-bg2.gif) repeat-y right;}
+.x-grid3-row-selected td div.x-grid3-cell-inner {border-top:1px dotted #a3bae9;}
+
+
+/*--------------------------------------------------------------------------------------|
+|		Estilos para el Grid Agrupado Alta/Detalle Consentimiento                		|
+|--------------------------------------------------------------------------------------*/
+.gridConsentimiento{border:1px solid #9F9FB6; padding: 1px; background-color: #FFFFF;}
+.gridConsentimiento .x-grid3-row td {border-top:none;border-bottom:1px solid #dddddd;background:none;}
+.gridConsentimiento .x-grid3-header{display: none;}
+.gridConsentimiento  .x-panel-header {
+	background-image:url(../images/ext/grid/bkHeadGridCons.gif);
+	color:#FFFFFF;
+	font-size:11px;
+	border:none;
+	font-weight:bold;
+	padding-top: 0;
+	padding-bottom:0;
+	height: 16px;
+}
+.gridConsentimiento .x-grid3-row td div.x-grid3-cell-inner{border-top: none;}
+.gridConsentimiento .x-grid3-row-alt{background-color: transparent;}
+.gridConsentimiento .x-grid-group-hd div.x-grid-group-title {color:#000000;}
+.gridConsentimiento .x-grid3-cell-inner{color: #000000;}
+.gridConsentimiento .x-grid-group-hd {border-bottom:1px solid #F6F6F8;}
+
+.gridAltaConsentimiento{border:1px solid #8FB100;}
+.gridAltaConsentimiento .x-grid3{background-color: #F4F7E6;}
+.gridAltaConsentimiento .x-grid3-row td {border-bottom:1px solid #E0E9B8;}

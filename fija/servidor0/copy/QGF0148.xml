@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Apr 02 16:15:53 MEST 2012 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGC138CO" Servicio = "QGF0148" Descripcion = "DESCRIPCION DEL MOTIVO DEL ESTADO DE UN CLIENTE PREPAGO" LongDatosTotal = "2104" LongDatosEntrada = "2" LongDatosSalida = "2102" HashDNA = "d15f20de270cb759d8c18555cc969e4e" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "CO-MOT-EST-PGO" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "MOT-PRE-DAT-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-MOT-EST-PGO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-MOT-EST-PGO" Longitud = "40" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

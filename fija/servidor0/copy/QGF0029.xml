@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:17 a partir de la COPY QGCV00A1 -->
+<!--
+   *IC* 18/FEB/2010 11:41:40 LIBPR.COPYS.QG00(QGCV00A1)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG00A1CO" Servicio="QGF0029" Cabecera="NATE" Descripcion="RUTINA PARA OBTENER/ACTUALIZAR EL NUMERO SECUENCIAL DE LA NUSE">
+  <NA_GRUPO Acceso="E" Nombre="CV9060-E-REGISTRO">
+    <NA_CAMPO Nombre="NO-TABLA-E" Tipo="2" Longitud="8"/>
+  </NA_GRUPO>
+  <NA_GRUPO Acceso="S" Nombre="CV9060-S-REGISTRO">
+    <NA_CAMPO Nombre="NU-ULT-SEC-TAB-GBL-S" Tipo="3" Longitud="18"/>
+    <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="100"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

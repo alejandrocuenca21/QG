@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Nov 03 10:49:12 MET 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC256CO" Servicio="QGF0085" Descripcion ="CONSULTA DE MEDIOS DE COMUNICACION ASOCIADOS A UN C/D" LongDatosTotal ="5205" LongDatosEntrada ="3" LongDatosSalida ="5202" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-DRH-UNF-LOPD" Longitud = "3" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "CMC-MDO-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "DRH-ASO-CMC-VAM-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "IN-DRH-ASO-MDO-CMC" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-MEDIO-COMUNICA" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-MEDIO-COMUNICA" Longitud = "60" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-PROG-MOD" Longitud = "8" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

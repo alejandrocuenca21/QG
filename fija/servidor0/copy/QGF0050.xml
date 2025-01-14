@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:21 a partir de la COPY QGC3A1SV -->
+<!--
+   *IC* 18/FEB/2010 11:41:34 LIBPR.COPYS.QG00(QGC3A1SV)
+   *IC* 18/FEB/2010 11:41:33 LIBPR.COPYS.QG00(QGC3A0SV)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QGA1SVCO" Servicio="QGF0050" Cabecera="NATE" Descripcion="CALCULA ANAGRAMA TW">
+  <NA_GRUPO Nombre="CABECERA-QG">
+    <NA_CAMPO Nombre="CO-USUARIO" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-PASSWORD" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-SISTEMA" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-PERFIL" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-ULT-MAPA" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-ULT-PROG" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-ULT-PF" Tipo="2" Longitud="1"/>
+    <NA_GRUPO Nombre="FX-FECHA">
+      <NA_CAMPO Nombre="FX-DIA" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-GUION1" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="FX-MES" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-GUION2" Tipo="2" Longitud="1"/>
+      <NA_GRUPO Nombre="FX-ANO">
+        <NA_CAMPO Nombre="FX-SS" Tipo="3" Longitud="2"/>
+        <NA_CAMPO Nombre="FX-AA" Tipo="3" Longitud="2"/>
+      </NA_GRUPO>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="HR-HORA-DISP">
+      <NA_CAMPO Nombre="HR-HORA" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="HR-PUNTO1" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="HR-MINUTOS" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="HR-PUNTO2" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="HR-SEGUNDOS" Tipo="3" Longitud="2"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="DS-MICROSEG" Tipo="3" Longitud="6"/>
+    <NA_CAMPO Nombre="CO-ERROR-SQLCODE" Tipo="4" Longitud="3"/>
+    <NA_CAMPO Nombre="CO-ERROR-EIBFN" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-ERROR-EIBAID" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CO-ERROR-EIBRCODE" Tipo="2" Longitud="6"/>
+    <NA_CAMPO Nombre="DS-QGMNSAJ" Tipo="2" Longitud="79"/>
+    <NA_GRUPO Nombre="DS-DB2" Redefine="DS-QGMNSAJ">
+      <NA_CAMPO Nombre="DS-TABLA-DB2" Tipo="2" Longitud="8"/>
+      <NA_CAMPO Nombre="DS-FUNCION-DB2" Tipo="2" Longitud="6"/>
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="65"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="CLIENTE-QG">
+    <NA_CAMPO Nombre="CO-CLTE-COMPANIA" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-TIPO-DOC-IDEN" Tipo="2" Longitud="1"/>
+    <NA_GRUPO Nombre="NU-DOCUMENTO">
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="6"/>
+      <NA_CAMPO Nombre="CO-NIF" Tipo="2" Longitud="11"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CO-ANAGRAMA">
+      <NA_CAMPO Nombre="CO-ANAGR-APLL1" Tipo="2" Longitud="4"/>
+      <NA_CAMPO Nombre="CO-ANAGR-NOMBR" Tipo="2" Longitud="4"/>
+      <NA_CAMPO Nombre="CO-ANAGR-APLL2" Tipo="2" Longitud="4"/>
+      <NA_CAMPO Nombre="CO-ANAGR-RSOCL" Tipo="2" Longitud="8"/>
+      <NA_CAMPO Nombre="CO-ANAGR-ACTVD" Tipo="2" Longitud="4"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="CO-IDENTIDAD" Tipo="2" Longitud="1"/>
+    <NA_GRUPO Nombre="DS-CLIENTE">
+      <NA_CAMPO Nombre="DS-APELLIDO1" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-APELLIDO2" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-NOMBRE" Tipo="2" Longitud="50"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="DS-RAZON-SOCIAL" Tipo="2" Longitud="140"/>
+    <NA_CAMPO Nombre="IN-ALTA-GF" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="DS-CLIENTE-ANAGR" Tipo="2" Longitud="140"/>
+    <NA_CAMPO Nombre="CO-ANAGRAMA-GF" Tipo="2" Longitud="9"/>
+    <NA_CAMPO Nombre="CO-ESTADO" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="CO-MOTIVO-ESTADO" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-SEGMENTO" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-SUBSEGMENTO" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-OFICINA-COMERCIAL" Tipo="2" Longitud="5"/>
+    <NA_CAMPO Nombre="CO-ENTIDAD-POBLACION" Tipo="3" Longitud="7"/>
+    <NA_CAMPO Nombre="DS-IDENTIDAD" Tipo="2" Longitud="20"/>
+    <NA_CAMPO Nombre="DS-ESTADO" Tipo="2" Longitud="15"/>
+    <NA_CAMPO Nombre="DS-MOTIVO-ESTADO" Tipo="2" Longitud="25"/>
+    <NA_CAMPO Nombre="DS-SEGMENTO" Tipo="2" Longitud="20"/>
+    <NA_CAMPO Nombre="DS-SUBSEGMENTO" Tipo="2" Longitud="20"/>
+    <NA_CAMPO Nombre="DS-ENTIDAD-POBLACION" Tipo="2" Longitud="40"/>
+    <NA_GRUPO Nombre="FX-ALTA">
+      <NA_CAMPO Nombre="FX-ANO-ALTA" Tipo="3" Longitud="4"/>
+      <NA_CAMPO Nombre="FX-MES-ALTA" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-DIA-ALTA" Tipo="3" Longitud="2"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="IN-CONCURREN" Tipo="2" Longitud="1"/>
+    <NA_GRUPO Nombre="FX-ULT-CAMB-E">
+      <NA_CAMPO Nombre="FX-ANO-CAMB-E" Tipo="3" Longitud="4"/>
+      <NA_CAMPO Nombre="FX-MES-CAMB-E" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-DIA-CAMB-E" Tipo="3" Longitud="2"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="LOG-QG">
+    <NA_GRUPO Nombre="FX-ULT-MOD">
+      <NA_CAMPO Nombre="FX-ANO-MOD" Tipo="3" Longitud="4"/>
+      <NA_CAMPO Nombre="FX-MES-MOD" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-DIA-MOD" Tipo="3" Longitud="2"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="CO-USER-ULT-MOD" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-SISTEMA-ULT-MOD" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-PERFIL-ULT-MOD" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="DS-PERFIL-ULT-MOD" Tipo="2" Longitud="40"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="LOG-CONSULTAS-QG">
+    <NA_CAMPO Nombre="CO-TIPO-CONSULTA" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="NU-ENTRADA-CONSULTA" Tipo="3" Longitud="2"/>
+    <NA_CAMPO Nombre="IN-NO-HAY-MAS-DATOS" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="NU-LEIDAS-QUERY1" Tipo="3" Longitud="5"/>
+    <NA_CAMPO Nombre="NU-LEIDAS-QUERY2" Tipo="3" Longitud="5"/>
+    <NA_CAMPO Nombre="NU-LEIDAS-QUERY3" Tipo="3" Longitud="5"/>
+    <NA_GRUPO Nombre="DS-CLIENTE-SIG">
+      <NA_CAMPO Nombre="DS-APELLIDO1-SIG" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-APELLIDO2-SIG" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-NOMBRE-SIG" Tipo="2" Longitud="50"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="FILLER" Redefine="DS-CLIENTE-SIG">
+      <NA_CAMPO Nombre="DS-RAZON-SOCIAL-SIG" Tipo="2" Longitud="140"/>
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="10"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="CO-CLTE-COMPANIA-SIG" Tipo="2" Longitud="8"/>
+    <NA_GRUPO Nombre="FX-CAMBIO-SIG">
+      <NA_CAMPO Nombre="FX-ANO-SIG" Tipo="3" Longitud="4"/>
+      <NA_CAMPO Nombre="FX-MES-SIG" Tipo="3" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-DIA-SIG" Tipo="3" Longitud="2"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="CO-TIPO-CAMBIO-SIG" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="NU-ELEMT-HSTO-ULT" Tipo="3" Longitud="5"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="LOG-CONSULTA-HST">
+    <NA_GRUPO Nombre="HST-CLTE" Occurs="12">
+      <NA_CAMPO Nombre="CO-TIPO-CAMB" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="NU-ELEMT-HSTO" Tipo="3" Longitud="5"/>
+      <NA_CAMPO Nombre="DS-TIPO-CAMB" Tipo="2" Longitud="39"/>
+      <NA_CAMPO Nombre="FX-CAMBIO" Tipo="2" Longitud="10"/>
+      <NA_CAMPO Nombre="CO-SISTEMA-HST" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CO-USUARIO-HST" Tipo="2" Longitud="8"/>
+    </NA_GRUPO>
+    <NA_CAMPO Nombre="DS-CAMBIO" Tipo="2" Longitud="290"/>
+    <NA_GRUPO Nombre="CAMBIO-DE-DOCUMENTO" Redefine="DS-CAMBIO">
+      <NA_CAMPO Nombre="CO-TIP-DOC-ANT" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="NU-DOC-ANT" Tipo="2" Longitud="17"/>
+      <NA_CAMPO Nombre="CO-TIP-DOC-NEW" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="NU-DOC-NEW" Tipo="2" Longitud="17"/>
+      <NA_CAMPO Nombre="DS-TIPO-DOC-HST1" Tipo="2" Longitud="15"/>
+      <NA_CAMPO Nombre="DS-TIPO-DOC-HST2" Tipo="2" Longitud="15"/>
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="224"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CAMBIO-DE-ESTADO" Redefine="DS-CAMBIO">
+      <NA_CAMPO Nombre="CO-ESTADO-CLI" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="CO-ESTADO-CLR" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="CO-MOTIVO-EST" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CO-MOTIVO-ES1" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="DS-ESTADO-HST1" Tipo="2" Longitud="15"/>
+      <NA_CAMPO Nombre="DS-ESTADO-HST2" Tipo="2" Longitud="15"/>
+      <NA_CAMPO Nombre="DS-MOTIVO-EST-HST1" Tipo="2" Longitud="25"/>
+      <NA_CAMPO Nombre="DS-MOTIVO-EST-HST2" Tipo="2" Longitud="25"/>
+      <NA_CAMPO Nombre="FX-BAJA-CLIENTE" Tipo="2" Longitud="10"/>
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="194"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CAMBIO-DE-ENT-POBL" Redefine="DS-CAMBIO">
+      <NA_CAMPO Nombre="CO-OFICINA-AT" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CO-ENT-POBLA" Tipo="3" Longitud="7"/>
+      <NA_CAMPO Nombre="CO-OFICINA-AT-NEW" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CO-ENT-POBLA-NEW" Tipo="3" Longitud="7"/>
+      <NA_CAMPO Nombre="DS-ENTIDAD-POB-HST1" Tipo="2" Longitud="40"/>
+      <NA_CAMPO Nombre="DS-ENTIDAD-POB-HST2" Tipo="2" Longitud="40"/>
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="186"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CAMBIO-DE-RAZON-SC" Redefine="DS-CAMBIO">
+      <NA_CAMPO Nombre="DS-APE-1-ANT" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-APE-2-ANT" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-NOMBR-ANT" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-R-SOC-ANT" Tipo="2" Longitud="140"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CAMBIO-DE-SEGMENTO" Redefine="DS-CAMBIO">
+      <NA_CAMPO Nombre="CO-SEG-ANT" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CO-SEG-ACT" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CO-SUBSEG-ANT" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CO-SUBSEG-ACT" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="FX-EFECTIVIDA" Tipo="2" Longitud="10"/>
+      <NA_CAMPO Nombre="OB-CAMBIO-SEG" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="DS-SEGMENTO-HST1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="DS-SEGMENTO-HST2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="DS-SUBSEGMENTO-HST1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="DS-SUBSEGMENTO-HST2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="FILLER" Tipo="2" Longitud="142"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="QGC3C3SV">
+    <NA_CAMPO Nombre="QGC3-CO-TIPO-MOVI" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-CLIENTE" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="QGC3-CO-CLIENTE-RL" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="QGC3-CO-ESTADO-MOV" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-TI-DOC-ID" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-IDENTIDAD" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-EST-CLIENT" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-MOT-ESTADO" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="QGC3-CO-SEGMENTO" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="QGC3-CO-SUBSEGMEN" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="QGC3-CO-USUARIO-QG" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="QGC3-NU-DOCUMENTO" Tipo="2" Longitud="17"/>
+    <NA_CAMPO Nombre="QGC3-DS-ANAGRAMA" Tipo="2" Longitud="9"/>
+    <NA_CAMPO Nombre="QGC3-CO-OFICINA-AT" Tipo="2" Longitud="5"/>
+    <NA_CAMPO Nombre="QGC3-CO-ENT-POBLAC" Tipo="4" Longitud="7"/>
+    <NA_CAMPO Nombre="QGC3-FX-ALTA" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="QGC3-FX-ULT-MODIF" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="QGC3-FX-BAJA" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="QGC3-FX-MOVIMIENTO" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="QGC3-FX-APLICACION" Tipo="2" Longitud="10"/>
+    <NA_CAMPO Nombre="QGC3-IN-CAM-NIF-EX" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-IN-MOV-T92" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-RESUL-MOV" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="QGC3-CO-DIAGNOSTIC" Tipo="2" Longitud="4"/>
+    <NA_CAMPO Nombre="QGC3-DS-OBSER" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="QGC3-DS-APELLIDO-1" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="QGC3-DS-APELLIDO-2" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="QGC3-DS-NOMBRE" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="QGC3-DS-RAZON-SOC" Tipo="2" Longitud="140"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="PERFIL">
+    <NA_CAMPO Nombre="CO-PERFIL-G" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-SISTEMA-G" Tipo="2" Longitud="2"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="USUARIOS-QG">
+    <NA_CAMPO Nombre="USUA-FUNCION" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="USUA-CO-USUARIO-CO" Tipo="2" Longitud="8"/>
+    <NA_CAMPO Nombre="CO-USUA-PERFIL" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-USUA-SISTEMA" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CO-USUA-DS-NOMBRE" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CO-USUA-DS-APELLIDO1" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CO-USUA-DS-APELLIDO2" Tipo="2" Longitud="50"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="PERFILES-QG">
+    <NA_CAMPO Nombre="PFIL-CO-PERFIL-CO" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="PFIL-DS-PERFIL-CO" Tipo="2" Longitud="20"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="SISTEMA-QG">
+    <NA_CAMPO Nombre="SIST-SISTEMA" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="SIST-DS-SIST" Tipo="2" Longitud="30"/>
+    <NA_CAMPO Nombre="SIST-NEMOTECNICO" Tipo="2" Longitud="4"/>
+    <NA_CAMPO Nombre="SIST-GEST-CLIEN" Tipo="2" Longitud="1"/>
+    <NA_CAMPO Nombre="SIST-SEGMENTO" Tipo="2" Longitud="2"/>
+  </NA_GRUPO>
+  <NA_CAMPO Nombre="NU-REGISTROS-PANTALLA" Tipo="4" Longitud="2"/>
+  <NA_CAMPO Nombre="NU-CONSULTA" Tipo="4" Longitud="2"/>
+  <NA_CAMPO Nombre="IN-NO-HAY-MAS-USUARIOS" Tipo="2" Longitud="1"/>
+  <NA_GRUPO Nombre="TABLA-CO-USUARIO" Occurs="50">
+    <NA_CAMPO Nombre="CO-USUARIO-ORI" Tipo="2" Longitud="8"/>
+    <NA_GRUPO Nombre="FILLER" Redefine="CO-USUARIO-ORI">
+      <NA_CAMPO Nombre="CO-PROGRAMA-RETORNO" Tipo="2" Longitud="8"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="TABLA-CO-PERFIL" Occurs="50">
+    <NA_CAMPO Nombre="CO-PERFIL-ORI" Tipo="2" Longitud="2"/>
+  </NA_GRUPO>
+  <NA_GRUPO Nombre="TABLA-CO-SISTEMA" Occurs="50">
+    <NA_CAMPO Nombre="CO-SISTEMA-ORI" Tipo="2" Longitud="2"/>
+  </NA_GRUPO>
+  <NA_CAMPO Nombre="LI-OBSERVACIONES" Tipo="2" Longitud="30"/>
+  <NA_CAMPO Nombre="NU-DOC-EXTR" Tipo="2" Longitud="40"/>
+  <NA_GRUPO Nombre="LOG-CONSULTA-QG05">
+    <NA_GRUPO Nombre="CONS-QG05" Occurs="13">
+      <NA_CAMPO Nombre="QG05-CO-CLTE" Tipo="2" Longitud="8"/>
+      <NA_CAMPO Nombre="QG05-CO-TIP-DOC" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="QG05-NU-DOC" Tipo="2" Longitud="17"/>
+      <NA_CAMPO Nombre="QG05-DS-CLIENTE" Tipo="2" Longitud="48"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

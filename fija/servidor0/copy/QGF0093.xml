@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Tue Feb 15 09:31:55 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGR100CO" Servicio="QGF0093" Descripcion ="RECTIFICACION DE DATOS DE CLIENTE" LongDatosTotal ="1158" LongDatosEntrada ="316" LongDatosSalida ="842" HashDNA ="aca45df65cb2f1fa9eea9ac87b7a17cd" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-NOMBRE" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-APELLIDO-1" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-APELLIDO-2" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-RAZON-SOCIAL" Longitud = "140" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "CO-CLI-ORIGEN" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLI-UNIFICADO" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLI-BAJ-UNF" Longitud = "8" Occurs = "100" Tipo = "2" />
+    <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

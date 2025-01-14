@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Mon May 03 17:43:23 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGO300CO" Servicio="QGF0089" Descripcion ="CONSULTA DE DETALLE DEL CLIENTE DE FIJA" LongDatosTotal ="1598" LongDatosEntrada ="8" LongDatosSalida ="1590" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "NU-TLF-CONTACTO" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "NU-FAX" Longitud = "9" Tipo = "3" />
+    <NA_CAMPO Nombre = "EMAIL-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "EMA-EST-DAT-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "IT-ALT-EMA" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-EMA-PPR" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-EMAIL" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-DIR-CORREO" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ESTADO-EMAIL" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALIDAD-EMAIL" Longitud = "3" Tipo = "3" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Mon May 03 17:52:40 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGO500CO" Servicio="QGF0091" Descripcion ="CONSULTA DE PERTENENCIA A COLECTIVO" LongDatosTotal ="197" LongDatosEntrada ="36" LongDatosSalida ="161" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-COLECTIVO" Longitud = "6" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-ELE-COLECTIVO" Longitud = "30" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "IN-PTC-COLECTIVO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NO-ELE-COLECTIVO" Longitud = "160" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

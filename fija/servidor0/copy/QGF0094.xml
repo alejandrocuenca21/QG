@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Wed Mar 23 15:25:43 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGR200CO" Servicio="QGF0094" Descripcion ="CONSULTA DE DETALLE DE CLIENTE" LongDatosTotal ="5195" LongDatosEntrada ="28" LongDatosSalida ="5167" HashDNA ="853129bd13db0aa7060ea2ea9704d062" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACS-INF-COX" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "IN-TIP-CLI-LIN-NGC" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "EMAIL-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "EMA-EST-DAT-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "IT-ALT-EMA" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALT-EMA-PPR" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-EMAIL" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-DIR-CORREO" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ESTADO-EMAIL" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALIDAD-EMAIL" Longitud = "3" Tipo = "3" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "UNM-CLI-DAT-LST-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-DOC-NSCO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO-UNM" Longitud = "17" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOMBRE-UNM" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-1-UNM" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-2-UNM" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-RAZON-SOC-UNM" Longitud = "140" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SIT-ESTADO-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-EST-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-CLI-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-ALT-CLI-UNM" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-CMB-EST-UNM" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-IPR-FAC-UNM" Longitud = "1" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "GEO-OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "UNM-GEO-DAT-GR" Occurs = "10" >
+      <NA_CAMPO Nombre = "CO-TIPO-USO-DIR" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DIRE" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PROVINCIA-UNM" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-POBLACION-UNM" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-CALLE-UNM" Longitud = "30" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALLE-UNM" Longitud = "6" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-POSTAL-UNM" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOM-ATE-UNM" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CALLE-INE" Longitud = "5" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-DOMICILIO-GRL" Longitud = "150" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "LNF-CLI-DET-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-RAZON-SOCIAL" Longitud = "140" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOMBRE" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-1" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-2" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ESTADO-CLIENTE" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-MOTIVO-ESTADO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-IDENTIDAD" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-ALTA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-CMB-EST-UNF" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-TLF-CONTACTO" Longitud = "9" Tipo = "3" />
+      <NA_CAMPO Nombre = "NU-FAX" Longitud = "9" Tipo = "3" />
+      <NA_CAMPO Nombre = "CO-NIV-ATE-CLI" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-IDIOMA" Longitud = "2" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "GBL-CLI-DET-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DOC-GBL" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO-GBL" Longitud = "17" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-RAZON-SOC-GBL" Longitud = "140" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOMBRE-GBL" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-1-GBL" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-2-GBL" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO-GBL" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO-GBL" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-ESTADO-CLI-GBL" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-MOT-EST-CLI-GBL" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-IDENTIDAD-GBL" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-ALTA-CLI-GBL" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-CMB-EST-CLI-GBL" Longitud = "8" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

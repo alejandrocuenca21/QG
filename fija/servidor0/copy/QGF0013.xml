@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Apr 09 15:04:22 MEST 2012 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGC101CO" Servicio = "QGF0013" Descripcion = "BUSCADOR DE CLIENTES" LongDatosTotal = "21476" LongDatosEntrada = "473" LongDatosSalida = "21003" HashDNA = "fae249953ae7260f4edaf80d59c24e43" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "IN-UNI-NGC-CLI-GBL" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-MODALIDAD-UNM" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-RAZON-SOCIAL" Longitud = "140" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-NOMBRE" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-APELLIDO-1" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-APELLIDO-2" Longitud = "50" Tipo = "2" />
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "150" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "IND-PGN-IN" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "150" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "GBL-CLI-BUS-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "IN-UNI-NGC-CLI-GBL" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-MODALIDAD-UNM" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-TIPO-DOCUMENTO" Longitud = "40" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-RAZON-SOCIAL" Longitud = "140" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOMBRE" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-1" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-2" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ESTADO-CLIENTE" Longitud = "15" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SEGMENTO" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SUBSEGMENTO" Longitud = "20" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

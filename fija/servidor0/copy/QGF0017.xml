@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:18:16 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC128CO" Servicio="QGF0017" Descripcion ="DESCRIPCION DE ESTADO" LongDatosTotal ="405" LongDatosEntrada ="3" LongDatosSalida ="402" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-ESTADO-CLIENTE" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "CLI-EST-GR" Occurs = "25" >
+      <NA_CAMPO Nombre = "CO-ESTADO-CLIENTE" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ESTADO-CLIENTE" Longitud = "15" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:17 a partir de la COPY QGCV2000 -->
+<!--
+   *IC* 18/FEB/2010 11:41:42 LIBPR.COPYS.QG00(QGCV2000)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG2000CO" Servicio="QGF0030" Cabecera="NATE" Descripcion="MOVIMIENTOS ALTA Y MODIFICACION DE CLIENTE Y DIRECCIONES">
+  <NA_GRUPO Nombre="CV2000-ENTRADA">
+    <NA_CAMPO Nombre="CV2000-CO-TIP-MOV-CLI-UNM" Tipo="2" Longitud="2"/>
+    <NA_CAMPO Nombre="CV2000-IT-MOV-CLI-UNM" Tipo="2" Longitud="26"/>
+    <NA_GRUPO Nombre="CV2000-UNM-CLI-MOD-GR">
+      <NA_CAMPO Nombre="CV2000-CO-CLIENTE-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2000-CO-CLI-PDR-UNM" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2000-CO-CLI-CAB-UNM" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2000-CO-TIP-DOC-NSCO" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="CV2000-NU-DOCUMENTO" Tipo="2" Longitud="17"/>
+      <NA_CAMPO Nombre="CV2000-DS-NOMBRE-UNM" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="CV2000-DS-APELLIDO-1-UNM" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="CV2000-DS-APELLIDO-2-UNM" Tipo="2" Longitud="50"/>
+      <NA_CAMPO Nombre="CV2000-CO-TIP-CLI-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-EST-CLI-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-SIT-EST-CLI-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-JRQ-CLI-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-PAIS-NSCO" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-CO-RAZ-ALT-CLI-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-TIP-IPR-FAC-UNM" Tipo="2" Longitud="1"/>
+      <NA_CAMPO Nombre="CV2000-IT-INI-EST-CLI-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-ALT-CLI-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-ALT-CLI-UNM" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-MOD-CLI-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-MOD-CLI-UNM" Tipo="2" Longitud="22"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CV2000-UNM-SGM-MOD-GR">
+      <NA_CAMPO Nombre="CV2000-CO-TIP-SGM-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-MOT-SGM-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-SEGMENTO-UNM" Tipo="2" Longitud="3"/>
+      <NA_CAMPO Nombre="CV2000-CO-SUBSEGMENTO-UNM" Tipo="2" Longitud="3"/>
+      <NA_CAMPO Nombre="CV2000-CO-SGM-FISCAL-UNM" Tipo="2" Longitud="3"/>
+      <NA_CAMPO Nombre="CV2000-IT-ALT-SGM-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-ALT-SGM-UNM" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-MOD-SGM-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-MOD-SGM-UNM" Tipo="2" Longitud="22"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CV2000-UNM-PSN-DIR-MOD-GR">
+      <NA_CAMPO Nombre="CV2000-CO-SEC-DIR-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2000-CO-TIP-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-SBT-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-PROVINCIA-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-ENT-POB-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-CO-CALLE-UNM" Tipo="2" Longitud="6"/>
+      <NA_CAMPO Nombre="CV2000-DS-CALLE-UNM" Tipo="2" Longitud="30"/>
+      <NA_CAMPO Nombre="CV2000-CO-POSTAL-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-DS-NOM-ATE-UNM" Tipo="2" Longitud="80"/>
+      <NA_CAMPO Nombre="CV2000-NU-TEL-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-NU-TEL-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-NU-FAX-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-NU-FAX-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-CO-VIA-INE" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-IT-ALT-DIR-PSN-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-ALT-DIR-PSN" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-MOD-DIR-PSN-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-MOD-DIR-PSN" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-PROV-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-TEL1-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-TEL2-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-FAX1-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-FAX2-UNM" Tipo="2" Longitud="26"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CV2000-UNM-CRR-DIR-MOD-GR">
+      <NA_CAMPO Nombre="CV2000-CO-SEC-DIR-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2000-CO-TIP-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-SBT-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-PROVINCIA-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-ENT-POB-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-CO-CALLE-UNM" Tipo="2" Longitud="6"/>
+      <NA_CAMPO Nombre="CV2000-DS-CALLE-UNM" Tipo="2" Longitud="30"/>
+      <NA_CAMPO Nombre="CV2000-CO-POSTAL-UNM" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-DS-NOM-ATE-UNM" Tipo="2" Longitud="80"/>
+      <NA_CAMPO Nombre="CV2000-NU-TEL-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-NU-TEL-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-NU-FAX-UNM-1" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-NU-FAX-UNM-2" Tipo="2" Longitud="20"/>
+      <NA_CAMPO Nombre="CV2000-CO-VIA-INE" Tipo="2" Longitud="5"/>
+      <NA_CAMPO Nombre="CV2000-IT-ALT-DIR-CRR-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-ALT-DIR-CRR" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-MOD-DIR-CRR-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-MOD-DIR-CRR" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-PROV-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-TEL1-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-TEL2-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-FAX1-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-FAX2-UNM" Tipo="2" Longitud="26"/>
+    </NA_GRUPO>
+    <NA_GRUPO Nombre="CV2000-UNM-ELC-DIR-MOD-GR">
+      <NA_CAMPO Nombre="CV2000-CO-SEC-DIR-NSCO" Tipo="2" Longitud="11"/>
+      <NA_CAMPO Nombre="CV2000-CO-TIP-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-CO-SBT-DIR-UNM" Tipo="2" Longitud="2"/>
+      <NA_CAMPO Nombre="CV2000-NO-DIR-CORREO" Tipo="2" Longitud="80"/>
+      <NA_CAMPO Nombre="CV2000-IT-ALT-CRR-ELC-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-ALT-CRR-ELC" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-MOD-CRR-ELC-UNM" Tipo="2" Longitud="26"/>
+      <NA_CAMPO Nombre="CV2000-CO-USU-MOD-CRR-ELC" Tipo="2" Longitud="22"/>
+      <NA_CAMPO Nombre="CV2000-IT-DIR-ELEC-UNM" Tipo="2" Longitud="26"/>
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

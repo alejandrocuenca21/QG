@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ACEPTADOS" class="java.lang.Long"/>
+	<parameter name="RECHAZADOS" class="java.lang.Long"/>
+	<parameter name="AFIJO" class="java.lang.Long"/>
+	<parameter name="AMOVIL" class="java.lang.Long"/>
+	<parameter name="RFIJO" class="java.lang.Long"/>
+	<parameter name="RMOVIL" class="java.lang.Long"/>
+	<parameter name="PROCESADOS" class="java.lang.Long"/>
+	<parameter name="ICOACEPTADOS" class="java.lang.String"/>
+	<parameter name="ICORECHAZADOS" class="java.lang.String"/>
+	<parameter name="ICOAFIJO" class="java.lang.String"/>
+	<parameter name="ICOAMOVIL" class="java.lang.String"/>
+	<parameter name="ICORFIJO" class="java.lang.String"/>
+	<parameter name="ICORMOVIL" class="java.lang.String"/>
+	<field name="indicadorNegocio" class="java.lang.String">
+		<fieldDescription><![CDATA[indicadorNegocio]]></fieldDescription>
+	</field>
+	<field name="clienteNSCO" class="java.lang.String">
+		<fieldDescription><![CDATA[clienteNSCO]]></fieldDescription>
+	</field>
+	<field name="tipoDocumento" class="java.lang.String">
+		<fieldDescription><![CDATA[tipoDocumento]]></fieldDescription>
+	</field>
+	<field name="numDocumento" class="java.lang.String">
+		<fieldDescription><![CDATA[numDocumento]]></fieldDescription>
+	</field>
+	<field name="razonSocial" class="java.lang.String">
+		<fieldDescription><![CDATA[razonSocial]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="0" width="555" height="35" forecolor="#DADAE5" backcolor="#DADAE5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" forecolor="#13165C"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informe de Duplicados]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="80" width="56" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Origen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="56" y="80" width="97" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Código cliente]]></text>
+			</staticText>
+			<rectangle radius="5">
+				<reportElement x="0" y="10" width="169" height="57" forecolor="#7C80AD"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="2" y="28" width="94" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROCESADOS]]></text>
+			</staticText>
+			<rectangle radius="5">
+				<reportElement x="175" y="10" width="188" height="26" forecolor="#CED0E0" backcolor="#DEDFE9"/>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="367" y="10" width="188" height="26" forecolor="#CED0E0" backcolor="#DEDFE9"/>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="175" y="41" width="92" height="26" forecolor="#CED0E0" backcolor="#DEDFE9"/>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="271" y="41" width="92" height="26" forecolor="#CED0E0" backcolor="#DEDFE9"/>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="367" y="41" width="92" height="26" forecolor="#CED0E0" backcolor="#DEDFE9"/>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="463" y="41" width="92" height="26" forecolor="#CED0E0" backcolor="#DEDFE9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="202" y="14" width="89" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACEPTADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="44" width="30" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIJO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="44" width="42" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOVIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="14" width="90" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RECHAZADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="44" width="30" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIJO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="489" y="44" width="40" height="20" forecolor="#7F83B6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOVIL]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="291" y="14" width="72" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{ACEPTADOS}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="488" y="14" width="67" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{RECHAZADOS}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="232" y="44" width="34" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{AFIJO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="338" y="44" width="25" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{AMOVIL}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="44" width="31" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{RFIJO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="527" y="44" width="28" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{RMOVIL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="153" y="80" width="99" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Tipo doc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="252" y="80" width="97" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Doc. identif.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="349" y="80" width="206" height="23" forecolor="#65679E" backcolor="#E1E1EA"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<topPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<leftPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<bottomPen lineWidth="1.0" lineColor="#D0D0D0"/>
+					<rightPen lineWidth="1.0" lineColor="#D0D0D0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Nombre/Razón social]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="94" y="28" width="75" height="20" forecolor="#00086E"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$P{PROCESADOS}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="179" y="14" width="19" height="20"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{ICOACEPTADOS}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="372" y="14" width="19" height="20"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{ICORECHAZADOS}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="179" y="44" width="19" height="20"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{ICOAFIJO}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="275" y="44" width="19" height="20"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{ICOAMOVIL}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="372" y="44" width="19" height="20"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{ICORFIJO}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="467" y="44" width="19" height="20"/>
+				<imageExpression class="java.lang.String"><![CDATA[$P{ICORMOVIL}]]></imageExpression>
+			</image>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" forecolor="#EFEFF5" backcolor="#EFEFF5">
+					<printWhenExpression><![CDATA[Boolean.valueOf( $V{PAGE_COUNT}.intValue() % 2 == 0 )]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="56" height="20" forecolor="#00086E"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{indicadorNegocio}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="56" y="0" width="97" height="20" forecolor="#00086E"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{clienteNSCO}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="153" y="0" width="99" height="20" forecolor="#00086E"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{tipoDocumento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="252" y="0" width="97" height="20" forecolor="#00086E"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{numDocumento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="349" y="0" width="206" height="20" forecolor="#00086E"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{razonSocial}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="41" splitType="Stretch">
+			<rectangle radius="3">
+				<reportElement x="0" y="10" width="555" height="20" forecolor="#000099" backcolor="#434690"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="14" width="130" height="20" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ION - Cliente Global]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="369" y="14" width="175" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="14" width="80" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="284" y="14" width="65" height="20" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

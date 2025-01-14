@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Wed May 25 10:02:10 MEST 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGO100CO" Servicio="QGF0087" Descripcion ="CONSULTA DE SITUACION/EXISTENCIA DE CLIENTE Y CONSENTIMIENTO CON" LongDatosTotal ="101" LongDatosEntrada ="38" LongDatosSalida ="63" HashDNA ="e4e0cc2f9a78e36b849882c70aef143d" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-TIP-BUS-CLI" Longitud = "1" Tipo = "2" />
+    <NA_GRUPO Nombre = "IR-SER-CLI-DAT-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "CO-TIPO-DOCUMENTO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "NU-DOCUMENTO" Longitud = "17" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TIP-CLI-LIN-NGC" Longitud = "1" Tipo = "2" />
+    <NA_GRUPO Nombre = "GBL-DAT-CLI-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO-GBL" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO-GBL" Longitud = "2" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-EST-CSM-DRH" Longitud = "2" Tipo = "2" />
+    <NA_GRUPO Nombre = "DAT-CLI-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO" Longitud = "2" Tipo = "2" />
+    </NA_GRUPO>
+    <NA_GRUPO Nombre = "UNM-DAT-CLI-GR" >
+      <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SEGMENTO-UNM" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-SUBSEGMENTO-UNM" Longitud = "3" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

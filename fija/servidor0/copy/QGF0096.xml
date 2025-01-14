@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Fri Oct 15 18:11:16 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGR500CO" Servicio="QGF0096" Descripcion ="CONSULTA DE INTERLOCUTORES DE UN CLIENTE" LongDatosTotal ="27158" LongDatosEntrada ="76" LongDatosSalida ="27082" HashDNA ="X" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACS-INF-COX" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-INTERLOCUTOR" Longitud = "15" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-TIP-INTER" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "30" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-TW" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "PGN-TX" Longitud = "30" Tipo = "2" />
+    <NA_CAMPO Nombre = "IND-PGN-IN" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-TW" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-GBL" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-CLIENTE-NSCO" Longitud = "11" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TIP-CLI-LIN-NGC" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-VAL-EPL-DRH" Longitud = "1" Tipo = "2" />
+    <NA_GRUPO Nombre = "PYM-CLI-ITL-GR" Occurs = "20" >
+      <NA_CAMPO Nombre = "CO-CLIENTE" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-INTERLOCUTOR" Longitud = "15" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TIP-INTER" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-TIPO-INTERL" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-IN-TP-INT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-IDENTIDAD" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-CO-IDENT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-TRATAMIENTO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-CO-TRATAM" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-PROVINCIA" Longitud = "2" Tipo = "3" />
+      <NA_CAMPO Nombre = "FX-MODIF-CO-PROV" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-IDIOMA" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-CO-IDIOMA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-CARGO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-CO-CARGO" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-ALTA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-BAJA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-NOMBRE" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-DS-NOMBRE" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-1" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-NO-APELL1" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-APELLIDO-2" Longitud = "50" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-NO-APELL2" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "HO-INI-LLA-CTO-CLI" Longitud = "2" Tipo = "3" />
+      <NA_CAMPO Nombre = "FX-MOD-HOR-INI-CTO" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "HO-FIN-LLA-CTO-CLI" Longitud = "2" Tipo = "3" />
+      <NA_CAMPO Nombre = "FX-MOD-HOR-FIN-CTO" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-ITL-CAB-GRU" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-IN-CAB" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "NU-INT-ANIS" Longitud = "2" Tipo = "3" />
+      <NA_CAMPO Nombre = "FX-MOD-NU-INT-ANIS" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "NO-ATENCION-ITL" Longitud = "9" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-NO-ATENC" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-IVR" Longitud = "9" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-CO-IVR" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "OB-OBSERVACIONES" Longitud = "1000" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-MODIF-OB-OBSERV" Longitud = "8" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

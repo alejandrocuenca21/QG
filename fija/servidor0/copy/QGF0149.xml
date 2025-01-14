@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon Apr 02 16:33:06 MEST 2012 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGC139CO" Servicio = "QGF0149" Descripcion = "DESCRIPCION DEL CODIGO DE ACTIVACION DE PERSONA PREPAGO" LongDatosTotal = "3104" LongDatosEntrada = "2" LongDatosSalida = "3102" HashDNA = "9439b76dcbb27c800fd4545256ac308c" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "CO-ACTIVO-PGO" Longitud = "2" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso = "S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "ACT-PRE-DAT-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-ACTIVO-PGO" Longitud = "2" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-ACTIVO-PGO" Longitud = "60" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

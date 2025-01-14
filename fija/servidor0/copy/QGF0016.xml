@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:17:46 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC127CO" Servicio="QGF0016" Descripcion ="DESCRIPCION DE PAIS" LongDatosTotal ="21509" LongDatosEntrada ="6" LongDatosSalida ="21503" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-PAIS" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+    <NA_GRUPO Nombre = "PAI-GR" Occurs = "500" >
+      <NA_CAMPO Nombre = "CO-PAIS" Longitud = "3" Tipo = "3" />
+      <NA_CAMPO Nombre = "DS-PAIS" Longitud = "40" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

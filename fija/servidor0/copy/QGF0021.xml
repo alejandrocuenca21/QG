@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por CATALOGO: Wed Apr 28 10:20:32 MEST 2010 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGC132CO" Servicio="QGF0021" Descripcion ="DESCRIPCION DEL SECTOR ECONOMICO" LongDatosTotal ="8407" LongDatosEntrada ="4" LongDatosSalida ="8403" HashDNA ="X" >
+  <NA_GRUPO Nombre = "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "CO-SECTOR-ECO" Longitud = "4" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre = "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "3" Tipo = "3" />
+    <NA_GRUPO Nombre = "ECO-SET-GR" Occurs = "100" >
+      <NA_CAMPO Nombre = "CO-SECTOR-ECO" Longitud = "4" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SECTOR-ECO" Longitud = "80" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

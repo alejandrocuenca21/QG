@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Fri Nov 18 08:28:28 MET 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware = "ECI" Cabecera = "NATE" Programa = "QGP400CO" Servicio = "QGF0142" Descripcion = "MODIFICACION DE REGLAS DE SEGMENTACION DESDE WEB" LongDatosTotal = "49" LongDatosEntrada = "49" LongDatosSalida = "0" HashDNA = "103f877aaac396be6688f086a101dc98" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso = "E" >
+    <NA_CAMPO Nombre = "CO-SEGMENTO" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-REGLA-SGM" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "CA-LINEAS-UNF" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-LINEAS-UNM" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-LINEAS-TOTAL" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "CA-DIAS-PTE-SGM" Longitud = "3" Tipo = "3" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SEGMENTO-DST" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SUBSEGMENTO-DST" Longitud = "2" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-OFICINA-AT" Longitud = "5" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-NEMO-TANDEM" Longitud = "7" Tipo = "2" />
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

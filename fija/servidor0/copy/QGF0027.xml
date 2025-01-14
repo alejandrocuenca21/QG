@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- DESCRIPTOR generado el 18/FEB/2010 a las 14:16:17 a partir de la COPY QGCV0010 -->
+<!--
+   *IC* 18/FEB/2010 11:41:38 LIBPR.COPYS.QG00(QGCV0010)
+-->
+<!-- INVENTARIADO EN CATALOGO DE COMPONENTES -->
+<!-- NO MODIFICAR A MANO -->
+<NA_DESCRIPTOR TipoServicio="1" Middleware="ECI" Programa="QG0010CO" Servicio="QGF0027" Cabecera="NATE" Descripcion="CALCULA EL ANAGRAMA PROPIO DE CLGL">
+  <NA_GRUPO Acceso="E" Nombre="CV0010-E-REGISTRO">
+    <NA_CAMPO Nombre="CV0010-E-APELLIDO-1" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CV0010-E-APELLIDO-2" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CV0010-E-NOMBRE" Tipo="2" Longitud="50"/>
+    <NA_CAMPO Nombre="CV0010-E-RAZON-SOCI" Tipo="2" Longitud="140"/>
+  </NA_GRUPO>
+  <NA_GRUPO Acceso="S" Nombre="CV0010-S-REGISTRO">
+    <NA_CAMPO Nombre="CV0010-S-ANAGR-CALC" Tipo="2" Longitud="150"/>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>

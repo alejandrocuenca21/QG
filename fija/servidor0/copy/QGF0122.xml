@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--Generado por DIANA: Mon May 09 17:37:30 MEST 2011 -->
+<!--NO MODIFICAR A MANO-->
+<NA_DESCRIPTOR TipoServicio = "1" Middleware="ECI" Cabecera="NATE" Programa ="QGCC00CO" Servicio="QGF0122" Descripcion ="ADMINISTRACION ENTIDAD SERVICIOS NA" LongDatosTotal ="9727" LongDatosEntrada ="125" LongDatosSalida ="9602" HashDNA ="8b8c934680da9150fcf24cdd92da6a37" >
+  <NA_GRUPO Nombre =  "ENTRADA" Acceso="E" >
+    <NA_CAMPO Nombre = "IN-ACTUACION" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-SER-NA-CLI-GBL" Longitud = "20" Tipo = "2" />
+    <NA_CAMPO Nombre = "DS-SER-CLI-GBL" Longitud = "80" Tipo = "2" />
+    <NA_CAMPO Nombre = "CO-FUNCION-CLI-GBL" Longitud = "3" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-ONLINE-BATCH" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-TIPO-SERVICIO" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-DISPLAY" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-LOG-ERROR" Longitud = "1" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+    <NA_CAMPO Nombre = "IN-HABILITADO" Longitud = "1" Tipo = "2" />
+  </NA_GRUPO>
+  <NA_GRUPO Nombre =  "SALIDA" Acceso="S" >
+    <NA_CAMPO Nombre = "OCU-NU" Longitud = "2" Tipo = "3" />
+    <NA_GRUPO Nombre = "GBL-SER-DET-GR" Occurs = "50" >
+      <NA_CAMPO Nombre = "CO-SER-NA-CLI-GBL" Longitud = "20" Tipo = "2" />
+      <NA_CAMPO Nombre = "DS-SER-CLI-GBL" Longitud = "80" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-FUNCION-CLI-GBL" Longitud = "3" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-ONLINE-BATCH" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-TIPO-SERVICIO" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-DISPLAY" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-LOG-ERROR" Longitud = "1" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-INI-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "FX-FIN-VIGENCIA" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-ALT" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ALTA" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "CO-USUARIO-MOD" Longitud = "8" Tipo = "2" />
+      <NA_CAMPO Nombre = "IT-ULT-MOD" Longitud = "26" Tipo = "2" />
+      <NA_CAMPO Nombre = "IN-HABILITADO" Longitud = "1" Tipo = "2" />
+    </NA_GRUPO>
+  </NA_GRUPO>
+</NA_DESCRIPTOR>
