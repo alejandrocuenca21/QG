@@ -9,6 +9,8 @@
   	
     <bean id="dao.buscadorClientes" class="com.telefonica.ssnn.qg.buscador.clientes.dao.impl.QGBuscadorClientesDaoNA" />
     
+     <bean id="dao.buscadorClientesTW" class="com.telefonica.ssnn.qg.buscador.clientes.dao.impl.TWBuscadorClientesDaoNA" />
+    
     <!-- DAO para la auditoria -->
     <bean id="dao.auditor" class="com.telefonica.ssnn.qg.auditoria.dao.impl.QGAuditorDaoNA" />
     

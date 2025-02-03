@@ -86,6 +86,11 @@
       type="com.telefonica.ssnn.qg.buscador.clientes.struts.forms.QGListaClientesForm"
     />
     <form-bean
+      name="TWListaClientesForm"
+      type="com.telefonica.ssnn.qg.buscador.clientes.struts.forms.TWListaClientesForm"
+    />
+    
+    <form-bean
       name="QGEncartesForm"
       type="com.telefonica.ssnn.qg.administracion.encartes.struts.forms.QGEncartesForm"
     />
@@ -561,6 +566,23 @@
         redirect="false"
       />
     </action>
+    
+     <action
+      path="/ListaClientesTW"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      name="TWListaClientesForm"
+      scope="request"
+      input="/vListaClientesTW.do"
+      parameter="buscar, cargarTipoDocumento, exportarPDF, actualizarHistorial, borrarHistorial, buscarClienteHistorial, buscarVueltaAtras, obtenerHistorico"
+      unknown="false"
+      validate="false"
+    >
+      <forward
+        name="success"
+        path="/vListaClientesTW.do"
+        redirect="false"
+      />
+    </action>
     <action
       path="/DetalleConsentimiento"
       type="org.springframework.web.struts.DelegatingActionProxy"
@@ -626,7 +648,9 @@
 <action path="/vReglas" forward="ml.reglas" />
 <action path="/vContratos" forward="ml.contratos" />
 <action path="/vIndexMenu" forward="TFmainMenu" />
-
+<action path="/vIndexMenuTW" forward="TWmainLayout" />
+<action path="/vIndexMenuD4" forward="D4mainLayout" />
+<action path="/vListaClientesTW" forward="ml.buscadorClientesTW" />
   </action-mappings>
 
   <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" />     

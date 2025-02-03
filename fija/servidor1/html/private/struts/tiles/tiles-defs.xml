@@ -28,6 +28,32 @@
 		
 	</definition>
 	
+	<definition name="TWmainLayout" path="/jsp/layout/TWmainLayout.jsp">
+	  
+	  <put name="title" type="string" value="TW Tabla Referencia de clientes" />
+	 
+	  <put name="contenido" type="string" value="" />
+	  
+		<putList name="lstScripts">
+			<add value="js/TWjsLayout.js" />
+			<add value="js/QGinicio.js" />
+		</putList>
+		<putList name="lstStyles" />
+	</definition>
+	
+		<definition name="D4mainLayout" path="/jsp/layout/D4mainLayout.jsp">
+	  
+	  <put name="title" type="string" value="D4 Gestión de la información para Publicaciones y servicios de Información" />
+	 
+	  <put name="contenido" type="string" value="" />
+	  
+		<putList name="lstScripts">
+			<add value="js/TWjsLayout.js" />
+			<add value="js/QGinicio.js" />
+		</putList>
+		<putList name="lstStyles" />
+	</definition>
+	
 	<definition name="ml.index" extends="QGmainLayout">
 		<put name="title" type="string" value="Indice" />
 		<put name="contenido" type="page" value="/jsp/QGinicio.jsp" />
@@ -148,6 +174,20 @@
 		
 		<putList name="lstScripts">
 			<add value="/js/clientes/buscadorclientes/QGbuscadorclientes.js" />
+			<add value="/ext/plugins/rowactions/rowActions.js" />
+		</putList>
+		<putList name="lstStyles" >
+			<add value="ext/plugins/rowactions/rowActions.css" />
+		</putList>
+	</definition>
+	<!-- Creamos el buscador clientes de TW -->
+	<definition name="ml.buscadorClientesTW" extends="TWmainLayout">
+		<put name="title" type="string" value="Buscador de Clientes" />
+		
+		<put name="contenido" type="page" value="/jsp/clientes/buscadorclientes/TWbuscadorclientes.jsp" />
+		
+		<putList name="lstScripts">
+			<add value="/js/clientes/buscadorclientes/TWbuscadorclientes.js" />
 			<add value="/ext/plugins/rowactions/rowActions.js" />
 		</putList>
 		<putList name="lstStyles" >

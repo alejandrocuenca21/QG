@@ -143,7 +143,10 @@
         displayValue = "Acceso Cliente Global";
       } else if (originalValue === "TW") {
         displayValue = "Acceso Cliente Línea fija";
-      } else {
+      } else if (originalValue === "D4") {
+        displayValue = "Gestión de la información para Publicaciones y servicios de Información";
+      }
+      else {
         displayValue = originalValue; // Mantiene el valor
       }
 
@@ -157,10 +160,13 @@
         return function() {
           if (val === "QG") {
               window.location.href = "vIndex.do";
-            }
-            // else {
-            //   ... puedes hacer otra lógica para otros valores ...
-            // }
+            }  else if (val === "D4") {
+            	 window.location.href = "vIndexMenuD4.do";
+            }  else if (val === "TW") {
+                window.location.href = "vIndexMenuTW.do";
+            } else {
+                alert("Otro valor: " + val);
+           }
         };
       })(originalValue);
 

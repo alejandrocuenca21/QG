@@ -45,6 +45,10 @@ Contexto de Spring para las Actions de Struts.
 		<property name="auditorServicio" ref="servicio.Auditor" />
 	</bean>
 	
+	<bean name="/ListaClientesTW" class="com.telefonica.ssnn.qg.buscador.clientes.struts.actions.TWListaClientesAction" >
+		<property name="buscadorClientesServicio" ref="servicio.BuscadorClientesTW" />
+	</bean>
+	
 	<bean name="/DetalleConsentimientosDerechos" class="com.telefonica.ssnn.qg.administracion.consentimientos.struts.actions.QGDetalleAltaConsentimientosAction" >
 		<property name="consentimientosServicio" ref="servicio.Consentimientos" />
 		<property name="mediosServicio" ref="servicio.Medios" />
